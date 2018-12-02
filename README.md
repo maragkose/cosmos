@@ -1,15 +1,16 @@
-#COSMOS
+# COSMOS
 
 Cosmos is a php based candidate tracking system that can be used by companies to track and monitor the progress of their recruitment process.
 The process that is followed in cosmos currently consists of CV screening->assessment day->first interview round->second interview round.
 
 Cosmos has several features like:
--- automated sending of interview outlook invitations
--- import from excel application forms
--- mass import of candidates names/details
--- custom candidate form fields
--- online creation of tests with automated correction and candidate form update with the results
--- reports with the interviews performed per interviewer, candidates percentage pass rates per recruitment phase etc.
+
+* automated sending of interview outlook invitations
+* import from excel application forms
+* mass import of candidates names/details
+* custom candidate form fields
+* online creation of tests with automated correction and candidate form update with the results
+* reports with the interviews performed per interviewer, candidates percentage pass rates per recruitment phase etc.
 
 Features
 
