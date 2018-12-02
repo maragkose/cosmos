@@ -1,0 +1,10 @@
+conjunto1: 
+  titulo: "Título del conjunto de ítems" 
+  descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+  items: 
+    situacion_laboral: 
+      texto: "¿Cuál es tu situación laboral?" 
+      formato: binaria 
+      respuestas: 
+        - "Empleado" 
+        - "Desempleado"

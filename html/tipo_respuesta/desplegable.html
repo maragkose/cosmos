@@ -1,0 +1,25 @@
+<table class="tipo-respuesta-desplegable">
+    <tr>
+        <td class="item-pregunta">
+           <span class='num'><?php echo $itemNum.". ";?></span><?php echo $item->getTextoPregunta();?>
+        </td>
+        <td>
+            <select name="<?php echo $itemsGroup->getFullItemId($item)?>"
+                    <?php if($item->isRequired()){?> required="required"<?php }?>>
+                <option value=""><?php echo $form->getSelectTxt()?></option>
+                <?php foreach($item->getOpcionesRespuesta() as $respuestaId=>$respuesta){?>
+                <option value="<?php echo $respuestaId?>"><?php echo $respuesta?></option>
+                <?php }?>
+            </select>
+        </td>
+        <!-- Ítem adjunto -->
+        <?php if($item->getItemAdjunto()){?>
+        <td class="adjunto">
+            <?php include("html/tipo_respuesta/".Item::ID_ADJUNTO."_".$item->getItemAdjunto()->getTipoRespuesta().".html")?>
+        </td>
+        <?php }?>
+
+        <!--/Ítem adjunto-->
+    </tr>
+   
+</table>

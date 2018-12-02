@@ -1,0 +1,10 @@
+conjunto1: 
+  titulo: "Título del conjunto de ítems" 
+  descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+  items: 
+    situacion_laboral: 
+      texto: "¿En el último mes, en cuántas ocasiones has ido al cine?" 
+      formato: desplegable 
+      respuestas: 
+        min: 0 
+        max: 30

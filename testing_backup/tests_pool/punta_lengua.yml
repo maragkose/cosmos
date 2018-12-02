@@ -1,0 +1,155 @@
+#### Cuestionario ####
+cuestionario:
+    estado: "desarrollo"
+    titulo: "Cuestionario: <i>en la punta de la lengua</i>"
+    descripcion: "En ocasiones puede ser muy complicado recordar una palabra conocida. Un caso especial de esta clase de "olvido" se da cuando al intentar recordar la palabra olvidada se experimenta una intensa sensación de estar <i>a punto</i> de conseguirlo. Esta sensación, que puede alargarse durante minutos, horas o hasta incluso días, suele conocerse como <i>tener una palabra en la punta de la lengua</i>. </br></br> ¿Has experimentado en alguna ocasión esta sensación? De ser así, agradeceríamos que respondieras a las preguntas de este cuestionario. Además de la información que puedas proporcionarnos sobre el <i>fenómeno de la punta de la lengua</i>, también nos interesa saber tu nivel de conocimientos de diferentes idiomas. <u>Es rápido de responder; completar el cuestionario no te llevará más de diez minutos</u>."
+    agradecimiento: "Muchas gracias por colaborar."
+    intro: s
+
+datos_personales:
+    titulo: "Indícanos cuál es tu <u>sexo</u> y <u>edad</u>. Si lo deseas, también puedes dejarnos tu <u>dirección de correo electrónico</u> y así recibir información sobre los resultados de este estudio."
+    items:
+        sexo:
+            formato:binaria
+            respuestas:
+              Hombre
+              Mujer
+            texto:"Sexo"
+        edad: 
+            formato:abierta
+            texto:"Edad"
+        mail:
+            formato:abierta
+            texto:"Dirección de correo electrónico (opcional)"
+
+
+#### Grupos de items ####
+
+castellano:
+    etiquetas:
+      num:7
+      min: "Nivel muy bajo"
+      max: "Nivel muy alto" 
+    titulo: "Indica a continuación tu nivel de conocimientos de <b>español</b>:"
+    items:
+      - "Lectura"
+      - "Escritura"
+      - "Oral"
+      - "Escucha"
+      
+castellano.adicional:
+    titulo: "Frecuencia de uso:"
+    etiquetas:
+      num:7
+      min: "Nunca"
+      max: "A diario"
+    items:
+      - "¿Con qué frecuencia utilizas el español?"
+    
+catalan:
+    etiquetas:
+      num:7
+      min: "Nivel muy bajo"
+      max: "Nivel muy alto" 
+    titulo: "Indica a continuación tu nivel de conocimientos en alguna de las siguientes lenguas: <b>catalán</b>, <b>euskera</b> o <b>gallego</b>. Si no conoces ninguna, puedes continuar con el siguiente apartado de preguntas; si conoces más de una, responde teniendo en cuenta sólo aquella en la que tengas un mayor dominio."
+    items:
+      - "Lectura"
+      - "Escritura"
+      - "Oral"
+      - "Escucha"
+          
+catalan.adicional:
+    titulo: "Frecuencia de uso:"
+    etiquetas:
+      num:7
+      min: "Nunca"
+      max: "A diario"
+    items:
+      - "¿Con qué frecuencia utilizas esta lengua (catalán, euskera o gallego)?"
+      
+    
+ingles:
+    etiquetas:
+      num:7
+      min: "Nivel muy bajo"
+      max: "Nivel muy alto" 
+    titulo: "Indica a continuación tu nivel de conocimientos de <b>otra lengua no incluida en las preguntas anteriores</b>. Si no conoces ninguna más, puedes continuar con el siguiente apartado de preguntas; si conoces más de una, responde teniendo en cuenta sólo aquella en la que tengas un mayor dominio."
+    items:
+      - "Lectura"
+      - "Escritura"
+      - "Oral"
+      - "Escucha"
+     
+ingles.adicional:
+    titulo: "Frecuencia de uso: "
+    etiquetas: 
+      num:7
+      min: "Nunca"
+      max: "A diario"
+    items:
+      - "¿Con qué frecuencia utilizas esta lengua?"
+      
+
+palabras:
+    etiquetas:
+      - "Nunca en los últimos tres meses"
+      - "Una vez al mes"
+      - "Varias veces al mes"
+      - "Una vez por semana"
+      - "Varias veces por semana"
+      - "Una vez al día"
+      - "Varias veces al día"
+    titulo: "¿En alguna ocasión durante los <b>últimos tres meses</b> has experimentado la sensación de <i>tener una palabra en la punta de la lengua</i>? Responde a continuación con qué formato de palabras y con qué frecuencia lo has experimentado:"
+    items:
+      - "Palabras que expresan una cualidad de la persona o cosa nombrada (adjetivos). Por ejemplo: <i> bueno, grande, fuerte, veloz, etc. </i>"
+      - "Palabras que hacen referencia a una acción (verbos)."
+      - "Nombre o apellidos de una persona conocida o de un personaje histórico, famoso, de ficción, etc."
+      - "Nombre de un lugar, como puede ser una calle, ciudad, país o cualquier elemento geográfico, etc."
+      - "Nombre de un libro, película, canción, serie de televisión, obra de arte, etc."
+      - "Marcas comerciales, tiendas, bares u otros locales."
+      - "Nombres de oficios, herramientas y utensilios."
+      - "Nombres de animales, frutas, verduras o cualquier otra variedad de plantas."
+      - "Palabras que hacen referencia a conceptos no materiales (abstractos), que no pueden ser percibidos por los sentidos. Por ejemplo: <i>poder, razón, pobreza, sabiduría, justicia, etc.</i>"
+      - "Palabras que se refieren a sentimientos o emociones. Por ejemplo: <i>rabia, felicidad, miedo, tristeza, etc.</i>"
+
+info_accesible:
+    etiquetas:
+      num:7
+      min: "Nunca recuerdo esta información"
+      max: "Siempre y con mucha intensidad"
+    titulo: "¿Qué puedes recordar de la palabra olvidada cuando experimentas la sensación de <i>tener una palabra en la punta de la lengua</i>?"
+    items:
+      - "Alguno de los sonidos o letras de la palabra."
+      - "La primera o la última letra de la palabra."
+      - "La longitud aproximada de la palabra."
+      - "Palabras con sonido u ortografía similar."
+      - "Palabras de significado similar."
+
+fpl_lenguas:
+    etiquetas:
+      num:7
+      min: "Nunca"
+      max: "Siempre"
+    titulo: "¿Con qué lenguas experimentas el fenónemo de <i>tener una palabra en la punta de la lengua</i>? Responde a este apartado si conoces más de una lengua."
+    items:
+      - "En la mayoría de ocasiones me ocurre con palabras en español."
+      - "En la mayoría de ocasiones me ocurre con palabras en catalán, euskera o gallego."
+      - "En la mayoría de ocasiones me ocurre con otra lengua." 
+      - "A veces me ocurre al buscar la traducción de una palabra entre las lenguas que utilizo."
+      - "Al intentar recordar la palabra recuerdo otras palabras similares de alguna de las lenguas que utilizo."
+
+estrategias:
+    etiquetas:
+      num:7
+      min: "Nunca"
+      max: "Siempre"
+    titulo: "Por último, indica a continuación qué haces y cómo te sientes mientras experimentas la sensación de <i>tener una palabra en la punta de la lengua</i>:"
+    items:
+      - "Después de un tiempo sin pensar en la palabra, la puedo recordar."
+      - "Dedico mucho esfuerzo en recordar la palabra hasta que lo consigo."
+      - "Consulto información en libros, diccionarios, internet, etc. para poder recordarla."
+      - "Siento una gran necesidad por recordar la palabra."
+      - "Necesito mucho tiempo para recordar la palabra."
+      - "Siempre consigo recordar la palabra."
+      
+    

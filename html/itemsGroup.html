@@ -1,0 +1,96 @@
+<div class="itemsGroup" id="<?php echo ItemsGroup::ID_HTML?>_<?php echo $itemsGroupId?>">
+     <!-- Título de cada grupo de ítems -->
+     <div class="title">
+        <?php echo ($itemsGroupId).". {$itemsGroup->getTitle()}";?>
+    </div>
+
+    <?php if($itemsGroup->getDescription()){?>
+    <!-- Descripción del conjunto -->
+    <div class="description">
+        <?php echo $itemsGroup->getDescription()?>
+    </div>
+    <?php }?>
+    
+    <?php if($itemsGroup->getImage()){?>
+    <!-- Imagen del conjunto -->
+    <div class="image">
+        <img src="<?php echo IMAGE_DIR.DIRECTORY_SEPARATOR.$itemsGroup->getImage()?>" alt="<?php echo $itemsGroup->getTitle()?>">
+    </div>
+    <?php }?>
+    
+    <div class="items">
+        <table <?php if($itemsGroup->getIdsFromtexto()){?>class='likert-table'<?php }?>>
+            <!-- Etiquetas -->
+            <?php if($itemsGroup->etiquetas){?>
+            <thead>
+                <!-- etiquetasValues -->
+                <tr class="etiquetas-values">
+                    <!-- El primer th está vacío porque coincide con el texto del ítem -->
+                    <th></th>
+                    <!-- /th texto pregunta -->
+                    <?php foreach ($itemsGroup->etiquetas->getValues() as $etiquetaValue){?>
+                    <th >
+                        <?php echo $etiquetaValue?>
+                    </th>
+                    <?php }?>
+                </tr>
+                <!-- /etiquetasValues -->
+
+                <!-- Para etiquetas con valores mínimo y máximo 
+                     especificados, además se muestra una fila de ids. 
+                -->
+                <?php if($itemsGroup->etiquetas->getEtiquetaMinLabel()){?>
+                <tr class="etiquetas-ids">
+                    <td></td>
+                    <?php foreach ($itemsGroup->etiquetas->getIds() as $etiquetaId){?>
+                    <td >
+                        <?php echo $etiquetaId?>
+                    </td>
+                    <?php }?>
+                </tr>
+                <?php }?>
+                <!-- /etiquetasIds -->
+            </thead>
+            <?php }?>
+            <!-- /Etiquetas -->
+
+            <tbody>
+                <!-- items -->
+                <?php  if($itemsGroup->getItems()){
+                foreach ($itemsGroup->getItems() as $itemNum=>$item) {?>
+                <tr>
+                    <!-- Opciones de respuesta -->
+
+                    <!-- Si se trata de un ítem de respuesta likert, los td 
+                    de la plantilla likert.html deben coincidir con los th de 
+                    la cabecera de itemsGroup.html. Por tanto, se adjunta la 
+                    plantilla a continuación de la etiqueta de fila. -->           
+                    <?php if($itemsGroup->etiquetas){?>
+                    <?php include("html/tipo_respuesta/".$item->getTipoRespuesta().".html")?>
+                    <?php }else{?>
+                    <!-- Para el resto de tipos de respuesta, la plantilla inserta
+                    dentro de un td. -->
+                    <td class="item">
+                        <?php include("html/tipo_respuesta/".$item->getTipoRespuesta().".html")?>
+                    </td>
+                    <?php }?>
+                    <!-- /Opciones de respuesta -->
+
+                </tr>
+                <?php }}?>
+                <!-- /items -->
+            </tbody>
+
+        </table>
+    </div>
+    <?php  if($itemsGroup->getItemsSubGroups()){?>
+    <div class="itemsSubGroups">
+        <?php 
+        foreach ($itemsGroup->getItemsSubGroups() as $itemsSubGroupId=>$itemsSubGroup){
+        include "itemsSubGroup.html";
+        }?>
+    </div>
+    <?php }?>
+    
+
+</div>

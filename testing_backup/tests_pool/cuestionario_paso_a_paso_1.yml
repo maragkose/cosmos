@@ -1,0 +1,18 @@
+cuestionario:
+	titulo: "Ejemplo de cuestionario"
+	descripcion: "En este ejemplo se muestra cómo  crear, paso a paso, un cuestionario mediante la aplicación."
+datos_personales:
+	titulo: "Datos personales del participante"
+	items:
+		edad:
+			texto: "Indícanos tu edad"
+			formato: desplegable
+			respuestas:
+				min: 18
+				max: 100
+		situacion_laboral:
+			texto: "¿Cuál es tu situación laboral?"
+			formato: binaria
+			respuestas:
+				- Empleado
+				- Desempleado

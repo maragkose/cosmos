@@ -1,0 +1,21 @@
+
+.styled_select select{
+	background: transparent;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:2px solid #a511c0;
+	padding:1px;
+	-webkit-appearance: none;
+	overflow: hidden;
+	width: 138px;
+	height: 20px;
+	#text-shadow:1px 1px 0px #9b14b3;
+}
+.styled_select {
+	   width: 136px;
+           height: 20px;
+           overflow: hidden;
+           background: url("images/down.gif") no-repeat right #ddd;
+           border: 1px solid #ccc;
+}

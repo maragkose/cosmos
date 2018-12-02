@@ -1,0 +1,657 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Form</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Etiquetas.html"><i class="icon-folder-open"></i> Etiquetas</a></li>
+<li><a href="../packages/Form.html"><i class="icon-folder-open"></i> Form</a></li>
+<li><a href="../packages/Item.html"><i class="icon-folder-open"></i> Item</a></li>
+<li><a href="../packages/ItemsGroup.html"><i class="icon-folder-open"></i> ItemsGroup</a></li>
+<li><a href="../packages/Respuestas.html"><i class="icon-folder-open"></i> Respuestas</a></li>
+<li><a href="../packages/Spyc.html"><i class="icon-folder-open"></i> Spyc</a></li>
+<li><a href="../packages/config.html"><i class="icon-folder-open"></i> config</a></li>
+<li><a href="../packages/utils.html"><i class="icon-folder-open"></i> utils</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">314</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Crea un nuevo cuestionario."><span class="description">Crea un nuevo cuestionario.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addItemsGroup" title="addItemsGroup :: "><span class="description">addItemsGroup()
+        </span><pre>addItemsGroup()</pre></a></li>
+<li class="method public "><a href="#method_getDescription" title="getDescription :: "><span class="description">getDescription()
+        </span><pre>getDescription()</pre></a></li>
+<li class="method public "><a href="#method_getEstado" title="getEstado :: "><span class="description">getEstado()
+        </span><pre>getEstado()</pre></a></li>
+<li class="method public "><a href="#method_getId" title="getId :: "><span class="description">getId()
+        </span><pre>getId()</pre></a></li>
+<li class="method public "><a href="#method_getIntro" title="getIntro :: "><span class="description">getIntro()
+        </span><pre>getIntro()</pre></a></li>
+<li class="method public "><a href="#method_getItemsGroupById" title="getItemsGroupById :: Devuelve uno de los conjuntos de ítems del cuestionario."><span class="description">Devuelve uno de los conjuntos de ítems del cuestionario.</span><pre>getItemsGroupById()</pre></a></li>
+<li class="method public "><a href="#method_getItemsGroups" title="getItemsGroups :: "><span class="description">getItemsGroups()
+        </span><pre>getItemsGroups()</pre></a></li>
+<li class="method public "><a href="#method_getNextPageTxt" title="getNextPageTxt :: "><span class="description">getNextPageTxt()
+        </span><pre>getNextPageTxt()</pre></a></li>
+<li class="method public "><a href="#method_getNumPages" title="getNumPages :: Devuelve el número de páginas del cuestionario."><span class="description">Devuelve el número de páginas del cuestionario.</span><pre>getNumPages()</pre></a></li>
+<li class="method public "><a href="#method_getSelectTxt" title="getSelectTxt :: "><span class="description">getSelectTxt()
+        </span><pre>getSelectTxt()</pre></a></li>
+<li class="method public "><a href="#method_getSendTxt" title="getSendTxt :: "><span class="description">getSendTxt()
+        </span><pre>getSendTxt()</pre></a></li>
+<li class="method public "><a href="#method_getStartTxt" title="getStartTxt :: "><span class="description">getStartTxt()
+        </span><pre>getStartTxt()</pre></a></li>
+<li class="method public "><a href="#method_getStyleSheet" title="getStyleSheet :: "><span class="description">getStyleSheet()
+        </span><pre>getStyleSheet()</pre></a></li>
+<li class="method public "><a href="#method_getThanks" title="getThanks :: "><span class="description">getThanks()
+        </span><pre>getThanks()</pre></a></li>
+<li class="method public "><a href="#method_getTitle" title="getTitle :: "><span class="description">getTitle()
+        </span><pre>getTitle()</pre></a></li>
+<li class="method public "><a href="#method_getValidationErrorsTxt" title="getValidationErrorsTxt :: "><span class="description">getValidationErrorsTxt()
+        </span><pre>getValidationErrorsTxt()</pre></a></li>
+<li class="method public "><a href="#method_removeItemsGroupById" title="removeItemsGroupById :: Elimina un grupo de ítems del conjunto y reinicia su numeración."><span class="description">Elimina un grupo de ítems del conjunto y reinicia su numeración.</span><pre>removeItemsGroupById()</pre></a></li>
+<li class="method public "><a href="#method_resetKeysItemsGroups" title="resetKeysItemsGroups :: Reinicia la numeración de identificadores en el conjunto de grupos."><span class="description">Reinicia la numeración de identificadores en el conjunto de grupos.</span><pre>resetKeysItemsGroups()</pre></a></li>
+<li class="method public "><a href="#method_setDescription" title="setDescription :: "><span class="description">setDescription()
+        </span><pre>setDescription()</pre></a></li>
+<li class="method public "><a href="#method_setEstado" title="setEstado :: "><span class="description">setEstado()
+        </span><pre>setEstado()</pre></a></li>
+<li class="method public "><a href="#method_setId" title="setId :: "><span class="description">setId()
+        </span><pre>setId()</pre></a></li>
+<li class="method public "><a href="#method_setIntro" title="setIntro :: "><span class="description">setIntro()
+        </span><pre>setIntro()</pre></a></li>
+<li class="method public "><a href="#method_setNextPageTxt" title="setNextPageTxt :: "><span class="description">setNextPageTxt()
+        </span><pre>setNextPageTxt()</pre></a></li>
+<li class="method public "><a href="#method_setSelectTxt" title="setSelectTxt :: "><span class="description">setSelectTxt()
+        </span><pre>setSelectTxt()</pre></a></li>
+<li class="method public "><a href="#method_setSendTxt" title="setSendTxt :: "><span class="description">setSendTxt()
+        </span><pre>setSendTxt()</pre></a></li>
+<li class="method public "><a href="#method_setStartTxt" title="setStartTxt :: "><span class="description">setStartTxt()
+        </span><pre>setStartTxt()</pre></a></li>
+<li class="method public "><a href="#method_setStyleSheet" title="setStyleSheet :: "><span class="description">setStyleSheet()
+        </span><pre>setStyleSheet()</pre></a></li>
+<li class="method public "><a href="#method_setThanks" title="setThanks :: "><span class="description">setThanks()
+        </span><pre>setThanks()</pre></a></li>
+<li class="method public "><a href="#method_setTitle" title="setTitle :: "><span class="description">setTitle()
+        </span><pre>setTitle()</pre></a></li>
+<li class="method public "><a href="#method_setValidationErrorsTxt" title="setValidationErrorsTxt :: "><span class="description">setValidationErrorsTxt()
+        </span><pre>setValidationErrorsTxt()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_description" title="$description :: "><span class="description"></span><pre>$description</pre></a></li>
+<li class="property protected "><a href="#property_estado" title="$estado :: "><span class="description"></span><pre>$estado</pre></a></li>
+<li class="property protected "><a href="#property_id" title="$id :: "><span class="description"></span><pre>$id</pre></a></li>
+<li class="property protected "><a href="#property_intro" title="$intro :: "><span class="description"></span><pre>$intro</pre></a></li>
+<li class="property protected "><a href="#property_itemsGroups" title="$itemsGroups :: "><span class="description"></span><pre>$itemsGroups</pre></a></li>
+<li class="property protected "><a href="#property_nextPageTxt" title="$nextPageTxt :: "><span class="description"></span><pre>$nextPageTxt</pre></a></li>
+<li class="property protected "><a href="#property_selectTxt" title="$selectTxt :: "><span class="description"></span><pre>$selectTxt</pre></a></li>
+<li class="property protected "><a href="#property_sendTxt" title="$sendTxt :: "><span class="description"></span><pre>$sendTxt</pre></a></li>
+<li class="property protected "><a href="#property_startTxt" title="$startTxt :: Textos utilizados en los mensajes y botones."><span class="description"></span><pre>$startTxt</pre></a></li>
+<li class="property protected "><a href="#property_styleSheet" title="$styleSheet :: Hoja de estilos que utiliza el cuestionario."><span class="description"></span><pre>$styleSheet</pre></a></li>
+<li class="property protected "><a href="#property_thanks" title="$thanks :: Mensaje de agradecimiento al participante."><span class="description"></span><pre>$thanks</pre></a></li>
+<li class="property protected "><a href="#property_title" title="$title :: "><span class="description"></span><pre>$title</pre></a></li>
+<li class="property protected "><a href="#property_validationErrorsTxt" title="$validationErrorsTxt :: "><span class="description"></span><pre>$validationErrorsTxt</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_DEFAULT_DESCRIPTION" title="DEFAULT_DESCRIPTION :: "><span class="description">DEFAULT_DESCRIPTION</span><pre>DEFAULT_DESCRIPTION</pre></a></li>
+<li class="constant  "><a href="#constant_DEFAULT_ESTADO" title="DEFAULT_ESTADO :: "><span class="description">DEFAULT_ESTADO</span><pre>DEFAULT_ESTADO</pre></a></li>
+<li class="constant  "><a href="#constant_DEFAULT_INTRO" title="DEFAULT_INTRO :: Se muestra una página de introducción antes de iniciar el cuestionario."><span class="description">Se muestra una página de introducción antes de iniciar el cuestionario.</span><pre>DEFAULT_INTRO</pre></a></li>
+<li class="constant  "><a href="#constant_DEFAULT_STYLE_SHEET" title="DEFAULT_STYLE_SHEET :: "><span class="description">DEFAULT_STYLE_SHEET</span><pre>DEFAULT_STYLE_SHEET</pre></a></li>
+<li class="constant  "><a href="#constant_DEFAULT_THANKS" title="DEFAULT_THANKS :: "><span class="description">DEFAULT_THANKS</span><pre>DEFAULT_THANKS</pre></a></li>
+<li class="constant  "><a href="#constant_DEFAULT_TITLE" title="DEFAULT_TITLE :: "><span class="description">DEFAULT_TITLE</span><pre>DEFAULT_TITLE</pre></a></li>
+<li class="constant  "><a href="#constant_ESTADO_DESARROLLO" title="ESTADO_DESARROLLO :: Estado en el que se encuentra el cuestionario."><span class="description">Estado en el que se encuentra el cuestionario.</span><pre>ESTADO_DESARROLLO</pre></a></li>
+<li class="constant  "><a href="#constant_ESTADO_PUBLICADO" title="ESTADO_PUBLICADO :: "><span class="description">ESTADO_PUBLICADO</span><pre>ESTADO_PUBLICADO</pre></a></li>
+<li class="constant  "><a href="#constant_ID_INICIO" title="ID_INICIO :: Identificador por el que se comienzan a numerar los conjuntos."><span class="description">Identificador por el que se comienzan a numerar los conjuntos.</span><pre>ID_INICIO</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Form"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Form.html">Form</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">La clase principal.</p>
+<div class="details">
+<div class="long_description"><p>Incluye todas las clases necesarias para la creación
+de un cuestionario. Al crear una clase nueva es necesario hacer referencia
+a ella desde esta clase.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Form.html">Form</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="mailto:juanharo@gmail.com">Juan Haro</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://jharo.net/dokuwiki/testmaker">http://jharo.net/dokuwiki/testmaker</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright 2012 Juan Haro</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Por corregir. Algunos métodos heredados no siguen la estructura de inputs
+de las clases padre, lo cual provoca errores de tipo STRICT.</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Crea un nuevo cuestionario.</h2>
+<pre>__construct(string $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Requiere un identificador.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_addItemsGroup"></a><div class="element clickable method public method_addItemsGroup" data-toggle="collapse" data-target=".method_addItemsGroup .collapse">
+<h2>addItemsGroup()
+        </h2>
+<pre>addItemsGroup(\ItemsGroup $itemsGroup) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$itemsGroup</h4></div>
+</div></div>
+</div>
+<a id="method_getDescription"></a><div class="element clickable method public method_getDescription" data-toggle="collapse" data-target=".method_getDescription .collapse">
+<h2>getDescription()
+        </h2>
+<pre>getDescription() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEstado"></a><div class="element clickable method public method_getEstado" data-toggle="collapse" data-target=".method_getEstado .collapse">
+<h2>getEstado()
+        </h2>
+<pre>getEstado() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getId"></a><div class="element clickable method public method_getId" data-toggle="collapse" data-target=".method_getId .collapse">
+<h2>getId()
+        </h2>
+<pre>getId() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getIntro"></a><div class="element clickable method public method_getIntro" data-toggle="collapse" data-target=".method_getIntro .collapse">
+<h2>getIntro()
+        </h2>
+<pre>getIntro() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getItemsGroupById"></a><div class="element clickable method public method_getItemsGroupById" data-toggle="collapse" data-target=".method_getItemsGroupById .collapse">
+<h2>Devuelve uno de los conjuntos de ítems del cuestionario.</h2>
+<pre>getItemsGroupById(string | integer $itemsGroupId, boolean $remove) : <a href="../classes/ItemsGroup.html">\ItemsGroup</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Opcionalmente pemite eliminarlo del conjunto de grupos.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$itemsGroupId</h4>
+<code>string</code><code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$remove</h4>
+<code>boolean</code><p>Eliminar el grupo de items del formulario</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ItemsGroup.html">\ItemsGroup</a></code>$itemsGroup</div>
+</div></div>
+</div>
+<a id="method_getItemsGroups"></a><div class="element clickable method public method_getItemsGroups" data-toggle="collapse" data-target=".method_getItemsGroups .collapse">
+<h2>getItemsGroups()
+        </h2>
+<pre>getItemsGroups() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getNextPageTxt"></a><div class="element clickable method public method_getNextPageTxt" data-toggle="collapse" data-target=".method_getNextPageTxt .collapse">
+<h2>getNextPageTxt()
+        </h2>
+<pre>getNextPageTxt() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getNumPages"></a><div class="element clickable method public method_getNumPages" data-toggle="collapse" data-target=".method_getNumPages .collapse">
+<h2>Devuelve el número de páginas del cuestionario.</h2>
+<pre>getNumPages() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Por defecto el valor es 1.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getSelectTxt"></a><div class="element clickable method public method_getSelectTxt" data-toggle="collapse" data-target=".method_getSelectTxt .collapse">
+<h2>getSelectTxt()
+        </h2>
+<pre>getSelectTxt() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getSendTxt"></a><div class="element clickable method public method_getSendTxt" data-toggle="collapse" data-target=".method_getSendTxt .collapse">
+<h2>getSendTxt()
+        </h2>
+<pre>getSendTxt() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getStartTxt"></a><div class="element clickable method public method_getStartTxt" data-toggle="collapse" data-target=".method_getStartTxt .collapse">
+<h2>getStartTxt()
+        </h2>
+<pre>getStartTxt() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getStyleSheet"></a><div class="element clickable method public method_getStyleSheet" data-toggle="collapse" data-target=".method_getStyleSheet .collapse">
+<h2>getStyleSheet()
+        </h2>
+<pre>getStyleSheet() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getThanks"></a><div class="element clickable method public method_getThanks" data-toggle="collapse" data-target=".method_getThanks .collapse">
+<h2>getThanks()
+        </h2>
+<pre>getThanks() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getTitle"></a><div class="element clickable method public method_getTitle" data-toggle="collapse" data-target=".method_getTitle .collapse">
+<h2>getTitle()
+        </h2>
+<pre>getTitle() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getValidationErrorsTxt"></a><div class="element clickable method public method_getValidationErrorsTxt" data-toggle="collapse" data-target=".method_getValidationErrorsTxt .collapse">
+<h2>getValidationErrorsTxt()
+        </h2>
+<pre>getValidationErrorsTxt() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_removeItemsGroupById"></a><div class="element clickable method public method_removeItemsGroupById" data-toggle="collapse" data-target=".method_removeItemsGroupById .collapse">
+<h2>Elimina un grupo de ítems del conjunto y reinicia su numeración.</h2>
+<pre>removeItemsGroupById(string | integer $itemsGroupId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$itemsGroupId</h4>
+<code>string</code><code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_resetKeysItemsGroups"></a><div class="element clickable method public method_resetKeysItemsGroups" data-toggle="collapse" data-target=".method_resetKeysItemsGroups .collapse">
+<h2>Reinicia la numeración de identificadores en el conjunto de grupos.</h2>
+<pre>resetKeysItemsGroups() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>La numeración de identificadores se utiliza para mostrar de forma
+ordenada los conjuntos de ítems en la vista, tal como aparecen
+ordenados en el archivo de texto o en el orden que han sido creados.</p></div></div></div>
+</div>
+<a id="method_setDescription"></a><div class="element clickable method public method_setDescription" data-toggle="collapse" data-target=".method_setDescription .collapse">
+<h2>setDescription()
+        </h2>
+<pre>setDescription($description) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$description</h4></div>
+</div></div>
+</div>
+<a id="method_setEstado"></a><div class="element clickable method public method_setEstado" data-toggle="collapse" data-target=".method_setEstado .collapse">
+<h2>setEstado()
+        </h2>
+<pre>setEstado($estado) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$estado</h4></div>
+</div></div>
+</div>
+<a id="method_setId"></a><div class="element clickable method public method_setId" data-toggle="collapse" data-target=".method_setId .collapse">
+<h2>setId()
+        </h2>
+<pre>setId($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_setIntro"></a><div class="element clickable method public method_setIntro" data-toggle="collapse" data-target=".method_setIntro .collapse">
+<h2>setIntro()
+        </h2>
+<pre>setIntro($intro) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intro</h4></div>
+</div></div>
+</div>
+<a id="method_setNextPageTxt"></a><div class="element clickable method public method_setNextPageTxt" data-toggle="collapse" data-target=".method_setNextPageTxt .collapse">
+<h2>setNextPageTxt()
+        </h2>
+<pre>setNextPageTxt($nextPageTxt) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$nextPageTxt</h4></div>
+</div></div>
+</div>
+<a id="method_setSelectTxt"></a><div class="element clickable method public method_setSelectTxt" data-toggle="collapse" data-target=".method_setSelectTxt .collapse">
+<h2>setSelectTxt()
+        </h2>
+<pre>setSelectTxt($selectTxt) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$selectTxt</h4></div>
+</div></div>
+</div>
+<a id="method_setSendTxt"></a><div class="element clickable method public method_setSendTxt" data-toggle="collapse" data-target=".method_setSendTxt .collapse">
+<h2>setSendTxt()
+        </h2>
+<pre>setSendTxt($sendTxt) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$sendTxt</h4></div>
+</div></div>
+</div>
+<a id="method_setStartTxt"></a><div class="element clickable method public method_setStartTxt" data-toggle="collapse" data-target=".method_setStartTxt .collapse">
+<h2>setStartTxt()
+        </h2>
+<pre>setStartTxt($startTxt) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$startTxt</h4></div>
+</div></div>
+</div>
+<a id="method_setStyleSheet"></a><div class="element clickable method public method_setStyleSheet" data-toggle="collapse" data-target=".method_setStyleSheet .collapse">
+<h2>setStyleSheet()
+        </h2>
+<pre>setStyleSheet($styleSheet) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$styleSheet</h4></div>
+</div></div>
+</div>
+<a id="method_setThanks"></a><div class="element clickable method public method_setThanks" data-toggle="collapse" data-target=".method_setThanks .collapse">
+<h2>setThanks()
+        </h2>
+<pre>setThanks($thanks) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$thanks</h4></div>
+</div></div>
+</div>
+<a id="method_setTitle"></a><div class="element clickable method public method_setTitle" data-toggle="collapse" data-target=".method_setTitle .collapse">
+<h2>setTitle()
+        </h2>
+<pre>setTitle($title) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$title</h4></div>
+</div></div>
+</div>
+<a id="method_setValidationErrorsTxt"></a><div class="element clickable method public method_setValidationErrorsTxt" data-toggle="collapse" data-target=".method_setValidationErrorsTxt .collapse">
+<h2>setValidationErrorsTxt()
+        </h2>
+<pre>setValidationErrorsTxt($validationErrorsTxt) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$validationErrorsTxt</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_description"> </a><div class="element clickable property protected property_description" data-toggle="collapse" data-target=".property_description .collapse">
+<h2></h2>
+<pre>$description </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_estado"> </a><div class="element clickable property protected property_estado" data-toggle="collapse" data-target=".property_estado .collapse">
+<h2></h2>
+<pre>$estado </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_id"> </a><div class="element clickable property protected property_id" data-toggle="collapse" data-target=".property_id .collapse">
+<h2></h2>
+<pre>$id </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intro"> </a><div class="element clickable property protected property_intro" data-toggle="collapse" data-target=".property_intro .collapse">
+<h2></h2>
+<pre>$intro </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_itemsGroups"> </a><div class="element clickable property protected property_itemsGroups" data-toggle="collapse" data-target=".property_itemsGroups .collapse">
+<h2></h2>
+<pre>$itemsGroups </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_nextPageTxt"> </a><div class="element clickable property protected property_nextPageTxt" data-toggle="collapse" data-target=".property_nextPageTxt .collapse">
+<h2></h2>
+<pre>$nextPageTxt </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_selectTxt"> </a><div class="element clickable property protected property_selectTxt" data-toggle="collapse" data-target=".property_selectTxt .collapse">
+<h2></h2>
+<pre>$selectTxt </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_sendTxt"> </a><div class="element clickable property protected property_sendTxt" data-toggle="collapse" data-target=".property_sendTxt .collapse">
+<h2></h2>
+<pre>$sendTxt </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_startTxt"> </a><div class="element clickable property protected property_startTxt" data-toggle="collapse" data-target=".property_startTxt .collapse">
+<h2></h2>
+<pre>$startTxt </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>El valor predeterminado de estos textos se encuentra en config.php.
+Pueden ser especificados en el archivo de cuestionario.</p></div></div></div>
+</div>
+<a id="property_styleSheet"> </a><div class="element clickable property protected property_styleSheet" data-toggle="collapse" data-target=".property_styleSheet .collapse">
+<h2></h2>
+<pre>$styleSheet : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_thanks"> </a><div class="element clickable property protected property_thanks" data-toggle="collapse" data-target=".property_thanks .collapse">
+<h2></h2>
+<pre>$thanks : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_title"> </a><div class="element clickable property protected property_title" data-toggle="collapse" data-target=".property_title .collapse">
+<h2></h2>
+<pre>$title </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_validationErrorsTxt"> </a><div class="element clickable property protected property_validationErrorsTxt" data-toggle="collapse" data-target=".property_validationErrorsTxt .collapse">
+<h2></h2>
+<pre>$validationErrorsTxt </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_DEFAULT_DESCRIPTION"> </a><div class="element clickable constant  constant_DEFAULT_DESCRIPTION" data-toggle="collapse" data-target=".constant_DEFAULT_DESCRIPTION .collapse">
+<h2>DEFAULT_DESCRIPTION</h2>
+<pre>DEFAULT_DESCRIPTION </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DEFAULT_ESTADO"> </a><div class="element clickable constant  constant_DEFAULT_ESTADO" data-toggle="collapse" data-target=".constant_DEFAULT_ESTADO .collapse">
+<h2>DEFAULT_ESTADO</h2>
+<pre>DEFAULT_ESTADO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DEFAULT_INTRO"> </a><div class="element clickable constant  constant_DEFAULT_INTRO" data-toggle="collapse" data-target=".constant_DEFAULT_INTRO .collapse">
+<h2>Se muestra una página de introducción antes de iniciar el cuestionario.</h2>
+<pre>DEFAULT_INTRO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>En ella se incluyen el título y descripción del cuestionario.</p></div></div></div>
+</div>
+<a id="constant_DEFAULT_STYLE_SHEET"> </a><div class="element clickable constant  constant_DEFAULT_STYLE_SHEET" data-toggle="collapse" data-target=".constant_DEFAULT_STYLE_SHEET .collapse">
+<h2>DEFAULT_STYLE_SHEET</h2>
+<pre>DEFAULT_STYLE_SHEET </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DEFAULT_THANKS"> </a><div class="element clickable constant  constant_DEFAULT_THANKS" data-toggle="collapse" data-target=".constant_DEFAULT_THANKS .collapse">
+<h2>DEFAULT_THANKS</h2>
+<pre>DEFAULT_THANKS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DEFAULT_TITLE"> </a><div class="element clickable constant  constant_DEFAULT_TITLE" data-toggle="collapse" data-target=".constant_DEFAULT_TITLE .collapse">
+<h2>DEFAULT_TITLE</h2>
+<pre>DEFAULT_TITLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ESTADO_DESARROLLO"> </a><div class="element clickable constant  constant_ESTADO_DESARROLLO" data-toggle="collapse" data-target=".constant_ESTADO_DESARROLLO .collapse">
+<h2>Estado en el que se encuentra el cuestionario.</h2>
+<pre>ESTADO_DESARROLLO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Se utiliza para generar una copia guardada en html del cuestionario
+generado que será la que se mostrará al participante, aligerando así la carga.
+     - DESARROLLO: en desarrollo.
+     - PUBLICADO: versión final.</p></div></div></div>
+</div>
+<a id="constant_ESTADO_PUBLICADO"> </a><div class="element clickable constant  constant_ESTADO_PUBLICADO" data-toggle="collapse" data-target=".constant_ESTADO_PUBLICADO .collapse">
+<h2>ESTADO_PUBLICADO</h2>
+<pre>ESTADO_PUBLICADO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ID_INICIO"> </a><div class="element clickable constant  constant_ID_INICIO" data-toggle="collapse" data-target=".constant_ID_INICIO .collapse">
+<h2>Identificador por el que se comienzan a numerar los conjuntos.</h2>
+<pre>ID_INICIO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-02-05T00:18:24+01:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+conjunto1: 
+  titulo: "Título del conjunto de ítems" 
+  descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+  items: 
+    item1: 
+      texto: "Título del subconjunto" 
+      items: 
+        item1_subconjunto: 
+          texto: "Texto del ítem 1 del subconjunto"
+          formato: unica
+          respuestas:
+            opcion1
+            opcion2
+        item2_subconjunto:
+          texto: "Texto del ítem 2 del subconjunto"
+          formato: unica
+          respuestas:
+            opcion1
+            opcion2

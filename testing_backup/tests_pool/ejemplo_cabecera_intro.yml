@@ -1,0 +1,16 @@
+cuestionario:
+	titulo: "El título del cuestionario" 
+	descripcion: "Mensaje para el participante, objetivo del estudio, instrucciones para completar el cuestionario, etc." 
+	agradecimiento: "Mensaje de agradecimiento" 
+	estado: desarrollo
+	intro: s
+
+  
+
+conjunto1: 
+	titulo: "Título del conjunto de ítems" 
+	descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+	items: 
+		item1: 
+			texto: "Título del ítem" 
+			formato: abierta

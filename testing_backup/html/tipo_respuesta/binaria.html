@@ -1,0 +1,26 @@
+<table class="tipo-respuesta-binaria">
+    <tr>
+        <td class="item-pregunta">
+            <span class='num'><?php echo $itemNum.". ";?></span><?php echo $item->getTextoPregunta();?>
+        </td>
+        <?php foreach($item->getOpcionesRespuesta() as $respuestaId=>$respuesta){?>
+        <td>
+
+            <input type='radio' 
+                   name="<?php echo $itemsGroup->getFullItemId($item)?>" 
+                   value='<?php echo $respuestaId?>'
+                   <?php if($item->isRequired()){?> required="required"<?php }?>> 
+            <label>
+                <?php echo $respuesta?>
+            </label>
+        </td>
+        <?php }?>
+        <!-- Ítem adjunto -->
+        <?php if($item->getItemAdjunto()){?>
+        <td>
+            <?php include("html/tipo_respuesta/".Item::ID_ADJUNTO."_".$item->getItemAdjunto()->getTipoRespuesta().".html")?>
+        </td>
+        <?php }?>
+        <!--/Ítem adjunto-->
+    </tr>
+</table>

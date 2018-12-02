@@ -1,0 +1,28 @@
+<table class="tipo-respuesta-unica">
+        <tr class="item-pregunta">
+            <span class='num'><?php echo $itemNum.". ";?></span><?php echo $item->getTextoPregunta();?>
+        </tr>
+</table>
+<table id="333" class="respuestas">
+	<tr><td>
+<?php foreach($item->getOpcionesRespuesta() as $respuestaId=>$respuesta){?>
+</td></tr>
+<tr><td>
+
+                        <input type='radio' 
+                               name="<?php echo $itemsGroup->getFullItemId($item)?>" 
+                               value='<?php echo $respuestaId?>'
+                               <?php if($item->isRequired()){?> required="required"<?php }?>> 
+                        <label>
+                            <?php echo $respuesta?>
+                        </label>
+	</td></tr>
+                    <!-- Ítem adjunto -->
+                    <?php }?>
+                    <?php if($item->getItemAdjunto()){?>
+		    <tr><td>
+                        <?php include("html/tipo_respuesta/".Item::ID_ADJUNTO."_".$item->getItemAdjunto()->getTipoRespuesta().".html")?>
+	</td></tr>
+                    <?php }?>
+                    <!--/Ítem adjunto-->
+</table>

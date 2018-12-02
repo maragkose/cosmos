@@ -1,0 +1,14 @@
+conjunto1: 
+  titulo: "Título del conjunto de ítems" 
+  descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+  items: 
+    item1: 
+      texto: "Elige una opción" 
+      formato: unica 
+      respuestas: 
+        - "Opción 1" 
+        - "Opción 2" 
+        - "Otra (especificar)" 
+      item_adjunto: 
+        texto: "Especificar" 
+        formato: abierta

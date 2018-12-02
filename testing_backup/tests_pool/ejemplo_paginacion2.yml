@@ -1,0 +1,35 @@
+cuestionario:
+	titulo: "Ejemplo de cuestionario"
+	descripcion: "En este ejemplo se muestra cómo crear, paso a paso, un cuestionario mediante la aplicación"
+
+datos_personales:
+	titulo: "Datos personales del participante"
+	items:
+		edad:
+			texto: "Indícanos tu edad"
+			formato: desplegable
+			respuestas:
+				min: 18
+				max: 100
+		situacion_laboral:
+			texto: "¿Cuál es tu situación laboral?"
+			formato: binaria
+			respuestas:
+				- Empleado
+				- Desempleado
+
+preferencias_culturales:
+	titulo: "Preferencias culturales"
+	pagina_nueva: s
+	descripcion: "Indica, del 1 al 5, cuánto se corresponden las siguientes afirmaciones a la realidad."
+	etiquetas: 
+		num: 5
+	items:
+		cine:
+			texto: "Me gusta el cine"
+		teatro:
+			texto: "Asisto frecuentemente al teatro"
+		musica:
+			texto: "Escucho música diariamente"
+		literatura:
+			texto: "Me interesa la literatura"

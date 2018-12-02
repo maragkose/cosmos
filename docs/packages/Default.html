@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » Default</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Etiquetas.html"><i class="icon-folder-open"></i> Etiquetas</a></li>
+<li><a href="../packages/Form.html"><i class="icon-folder-open"></i> Form</a></li>
+<li><a href="../packages/Item.html"><i class="icon-folder-open"></i> Item</a></li>
+<li><a href="../packages/ItemsGroup.html"><i class="icon-folder-open"></i> ItemsGroup</a></li>
+<li><a href="../packages/Respuestas.html"><i class="icon-folder-open"></i> Respuestas</a></li>
+<li><a href="../packages/Spyc.html"><i class="icon-folder-open"></i> Spyc</a></li>
+<li><a href="../packages/config.html"><i class="icon-folder-open"></i> config</a></li>
+<li><a href="../packages/utils.html"><i class="icon-folder-open"></i> utils</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">314</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Default.html" title="Default"><i class="icon-folder-open"></i>Default</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_checkPermissions" title="checkPermissions :: "><span class="description">checkPermissions()
+        </span><pre>checkPermissions</pre></a></li>
+<li class="function  "><a href="#function_createMySQLTable" title="createMySQLTable :: Crea una nueva tabla en la base de datos MySQL con los campos del cuestionario
+como columnas."><span class="description">Crea una nueva tabla en la base de datos MySQL con los campos del cuestionario
+como columnas.</span><pre>createMySQLTable</pre></a></li>
+<li class="function  "><a href="#function_existsResultsFile" title="existsResultsFile :: Comprueba si existe el archivo de resultados."><span class="description">Comprueba si existe el archivo de resultados.</span><pre>existsResultsFile</pre></a></li>
+<li class="function  "><a href="#function_getResultsFileHeader" title="getResultsFileHeader :: Lee el archivo de resultados y devuelve un array con los campos de la cabecera del archivo de resultados."><span class="description">Lee el archivo de resultados y devuelve un array con los campos de la cabecera del archivo de resultados.</span><pre>getResultsFileHeader</pre></a></li>
+<li class="function  "><a href="#function_isReadable" title="isReadable :: "><span class="description">isReadable()
+        </span><pre>isReadable</pre></a></li>
+<li class="function  "><a href="#function_newResultsFile" title="newResultsFile :: Crea un nuevo archivo de texto de resultados y escribe la cabecera
+de campos."><span class="description">Crea un nuevo archivo de texto de resultados y escribe la cabecera
+de campos.</span><pre>newResultsFile</pre></a></li>
+<li class="function  "><a href="#function_openResultsFile" title="openResultsFile :: Abre el archivo de resultados y devuelve un puntero al mismo."><span class="description">Abre el archivo de resultados y devuelve un puntero al mismo.</span><pre>openResultsFile</pre></a></li>
+<li class="function  "><a href="#function_resultsArrayToString" title="resultsArrayToString :: Convierte un array en una cadena."><span class="description">Convierte un array en una cadena.</span><pre>resultsArrayToString</pre></a></li>
+<li class="function  "><a href="#function_saveRawResults" title="saveRawResults :: "><span class="description">saveRawResults()
+        </span><pre>saveRawResults</pre></a></li>
+<li class="function  "><a href="#function_saveResultsToFileText" title="saveResultsToFileText :: Guarda los resultados del cuestionario en un archivo de texto separado
+por comas (csv)."><span class="description">Guarda los resultados del cuestionario en un archivo de texto separado
+por comas (csv).</span><pre>saveResultsToFileText</pre></a></li>
+<li class="function  "><a href="#function_saveResultsToMongoDb" title="saveResultsToMongoDb :: Guarda los resultados en la colección $collectionName de la base de datos
+MongoDB."><span class="description">Guarda los resultados en la colección $collectionName de la base de datos
+MongoDB.</span><pre>saveResultsToMongoDb</pre></a></li>
+<li class="function  "><a href="#function_saveResultsToMySQL" title="saveResultsToMySQL :: Recibe los resultados del cuestionario enviados por el participante y los
+guarda en una base de datos MySQL."><span class="description">Recibe los resultados del cuestionario enviados por el participante y los
+guarda en una base de datos MySQL.</span><pre>saveResultsToMySQL</pre></a></li>
+<li class="function  "><a href="#function_sendResultsToMail" title="sendResultsToMail :: Envía los resultados a una dirección de correo electrónico."><span class="description">Envía los resultados a una dirección de correo electrónico.</span><pre>sendResultsToMail</pre></a></li>
+<li class="function  "><a href="#function_writeResultsFileHeader" title="writeResultsFileHeader :: Escribe la cabecera de campos en el archivo de resultados."><span class="description">Escribe la cabecera de campos en el archivo de resultados.</span><pre>writeResultsFileHeader</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#field" title="Un campo de la tabla.">field</a></li>
+<li><a href="#sql" title="">sql</a></li>
+<li><a href="#find" title="Recibe un array con condiciones para realizar una consulta en la base de datos
+y genera una cadena de texto adaptada a MySQL.">find</a></li>
+<li><a href="#tableRow" title="">tableRow</a></li>
+<li><a href="#fieldSet" title="Un conjunto de campos de una tabla de la base de datos.">fieldSet</a></li>
+<li><a href="#queryException" title="">queryException</a></li>
+<li><a href="#dbException" title="">dbException</a></li>
+<li><a href="#sql" title="">sql</a></li>
+<li><a href="#dbTable" title="">dbTable</a></li>
+<li><a href="#logger" title="">logger</a></li>
+<li><a href="#query" title="">query</a></li>
+<li><a href="#sqlException" title="">sqlException</a></li>
+<li><a href="#dbTableException" title="">dbTableException</a></li>
+<li><a href="#log" title="">log</a></li>
+<li><a href="#sqlResult" title="Gestiona la manipulación de registros devueltos tras una consulta.">sqlResult</a></li>
+<li><a href="#fieldValidate" title="">fieldValidate</a></li>
+<li><a href="#fieldException" title="">fieldException</a></li>
+<li><a href="#rowSet" title="Un conjunto de registros devueltos de una consulta en la base de datos.">rowSet</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Default.html">Default</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-function"></i> Functions</h3>
+<a id="function_checkPermissions"></a><div class="element clickable function  function_checkPermissions" data-toggle="collapse" data-target=".function_checkPermissions .collapse">
+<h2>checkPermissions()
+        </h2>
+<pre>checkPermissions($dir) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dir</h4></div>
+</div></div>
+</div>
+<a id="function_createMySQLTable"></a><div class="element clickable function  function_createMySQLTable" data-toggle="collapse" data-target=".function_createMySQLTable .collapse">
+<h2>Crea una nueva tabla en la base de datos MySQL con los campos del cuestionario
+como columnas.</h2>
+<pre>createMySQLTable(string $tableName, array $fields) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tableName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$fields</h4>
+<code>array</code><p>Los campos del cuestionario</p></div>
+</div></div>
+</div>
+<a id="function_existsResultsFile"></a><div class="element clickable function  function_existsResultsFile" data-toggle="collapse" data-target=".function_existsResultsFile .collapse">
+<h2>Comprueba si existe el archivo de resultados.</h2>
+<pre>existsResultsFile(string $savingName) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savingName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>true|false</div>
+</div></div>
+</div>
+<a id="function_getResultsFileHeader"></a><div class="element clickable function  function_getResultsFileHeader" data-toggle="collapse" data-target=".function_getResultsFileHeader .collapse">
+<h2>Lee el archivo de resultados y devuelve un array con los campos de la cabecera del archivo de resultados.</h2>
+<pre>getResultsFileHeader(resource $file) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>resource</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="function_isReadable"></a><div class="element clickable function  function_isReadable" data-toggle="collapse" data-target=".function_isReadable .collapse">
+<h2>isReadable()
+        </h2>
+<pre>isReadable($dir) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dir</h4></div>
+</div></div>
+</div>
+<a id="function_newResultsFile"></a><div class="element clickable function  function_newResultsFile" data-toggle="collapse" data-target=".function_newResultsFile .collapse">
+<h2>Crea un nuevo archivo de texto de resultados y escribe la cabecera
+de campos.</h2>
+<pre>newResultsFile(\type $savingName, \type $fields) : resource</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savingName</h4>
+<code>\type</code>
+</div>
+<div class="subelement argument">
+<h4>$fields</h4>
+<code>\type</code><p>Todos los campos que componen el cuestionario</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>resource</code>$file</div>
+</div></div>
+</div>
+<a id="function_openResultsFile"></a><div class="element clickable function  function_openResultsFile" data-toggle="collapse" data-target=".function_openResultsFile .collapse">
+<h2>Abre el archivo de resultados y devuelve un puntero al mismo.</h2>
+<pre>openResultsFile(string $fileName, string $mode) : resource</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fileName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code><p>Modo de apertura</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td>No se pudo abrir el archivo de resultados</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>resource</code></div>
+</div></div>
+</div>
+<a id="function_resultsArrayToString"></a><div class="element clickable function  function_resultsArrayToString" data-toggle="collapse" data-target=".function_resultsArrayToString .collapse">
+<h2>Convierte un array en una cadena.</h2>
+<pre>resultsArrayToString(array $results, string $resultsString) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$results</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$resultsString</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_saveRawResults"></a><div class="element clickable function  function_saveRawResults" data-toggle="collapse" data-target=".function_saveRawResults .collapse">
+<h2>saveRawResults()
+        </h2>
+<pre>saveRawResults($savingName, $results) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$savingName</h4></div>
+<div class="subelement argument"><h4>$results</h4></div>
+</div></div>
+</div>
+<a id="function_saveResultsToFileText"></a><div class="element clickable function  function_saveResultsToFileText" data-toggle="collapse" data-target=".function_saveResultsToFileText .collapse">
+<h2>Guarda los resultados del cuestionario en un archivo de texto separado
+por comas (csv).</h2>
+<pre>saveResultsToFileText(string $savingName, array $results, $fields) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Si los campos del cuestionario han sido modificados, guarda
+una copia del archivo de resultados existente y crea uno nuevo con los campos
+recibidos en $fields.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savingName</h4>
+<code>string</code><p>Nombre del archivo a guardar</p></div>
+<div class="subelement argument">
+<h4>$results</h4>
+<code>array</code><p>Los resultados del cuestionario enviados por el participante</p></div>
+<div class="subelement argument"><h4>$fields</h4></div>
+</div></div>
+</div>
+<a id="function_saveResultsToMongoDb"></a><div class="element clickable function  function_saveResultsToMongoDb" data-toggle="collapse" data-target=".function_saveResultsToMongoDb .collapse">
+<h2>Guarda los resultados en la colección $collectionName de la base de datos
+MongoDB.</h2>
+<pre>saveResultsToMongoDb(array $results, string $collectionName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$results</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$collectionName</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="function_saveResultsToMySQL"></a><div class="element clickable function  function_saveResultsToMySQL" data-toggle="collapse" data-target=".function_saveResultsToMySQL .collapse">
+<h2>Recibe los resultados del cuestionario enviados por el participante y los
+guarda en una base de datos MySQL.</h2>
+<pre>saveResultsToMySQL(string $tableName, array $results, array $formFields) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Comprueba si existe una tabla donde
+guardarlos y, en caso afirmativo, si sus campos se corresponden con los
+del cuestionario ($formFields).
+Si los campos de la tabla son diferentes a los campos del cuestionario, se guarda
+una copia de la tabla y se crea una nueva que incluya todos los
+campos del cuestionario.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tableName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$results</h4>
+<code>array</code><p>Los resultados del cuestionario enviados por el participante</p></div>
+<div class="subelement argument">
+<h4>$formFields</h4>
+<code>array</code><p>Todos los campos que componen el cuestionario</p></div>
+</div></div>
+</div>
+<a id="function_sendResultsToMail"></a><div class="element clickable function  function_sendResultsToMail" data-toggle="collapse" data-target=".function_sendResultsToMail .collapse">
+<h2>Envía los resultados a una dirección de correo electrónico.</h2>
+<pre>sendResultsToMail(array $results) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$results</h4>
+<code>array</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="function_writeResultsFileHeader"></a><div class="element clickable function  function_writeResultsFileHeader" data-toggle="collapse" data-target=".function_writeResultsFileHeader .collapse">
+<h2>Escribe la cabecera de campos en el archivo de resultados.</h2>
+<pre>writeResultsFileHeader(\type $file, \type $fieldNames) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>La cabecera
+establece las columnas del archivo.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>\type</code>
+</div>
+<div class="subelement argument">
+<h4>$fieldNames</h4>
+<code>\type</code><p>Todos los campos que componen el cuestionario</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="dbException" class="element ajax clickable class">
+<h1>dbException<a href="../classes/dbException.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/dbException.html" class="more">« More »</a>
+</div>
+<div id="dbTable" class="element ajax clickable class">
+<h1>dbTable<a href="../classes/dbTable.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/dbTable.html" class="more">« More »</a>
+</div>
+<div id="dbTableException" class="element ajax clickable class">
+<h1>dbTableException<a href="../classes/dbTableException.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/dbTableException.html" class="more">« More »</a>
+</div>
+<div id="field" class="element ajax clickable class">
+<h1>field<a href="../classes/field.html">¶</a>
+</h1>
+<p class="short_description">Un campo de la tabla.</p>
+<div class="details collapse"></div>
+<a href="../classes/field.html" class="more">« More »</a>
+</div>
+<div id="fieldException" class="element ajax clickable class">
+<h1>fieldException<a href="../classes/fieldException.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/fieldException.html" class="more">« More »</a>
+</div>
+<div id="fieldSet" class="element ajax clickable class">
+<h1>fieldSet<a href="../classes/fieldSet.html">¶</a>
+</h1>
+<p class="short_description">Un conjunto de campos de una tabla de la base de datos.</p>
+<div class="details collapse"></div>
+<a href="../classes/fieldSet.html" class="more">« More »</a>
+</div>
+<div id="fieldValidate" class="element ajax clickable class">
+<h1>fieldValidate<a href="../classes/fieldValidate.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/fieldValidate.html" class="more">« More »</a>
+</div>
+<div id="find" class="element ajax clickable class">
+<h1>find<a href="../classes/find.html">¶</a>
+</h1>
+<p class="short_description">Recibe un array con condiciones para realizar una consulta en la base de datos
+y genera una cadena de texto adaptada a MySQL.</p>
+<div class="details collapse"></div>
+<a href="../classes/find.html" class="more">« More »</a>
+</div>
+<div id="log" class="element ajax clickable class">
+<h1>log<a href="../classes/log.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/log.html" class="more">« More »</a>
+</div>
+<div id="logger" class="element ajax clickable class">
+<h1>logger<a href="../classes/logger.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/logger.html" class="more">« More »</a>
+</div>
+<div id="query" class="element ajax clickable class">
+<h1>query<a href="../classes/query.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/query.html" class="more">« More »</a>
+</div>
+<div id="queryException" class="element ajax clickable class">
+<h1>queryException<a href="../classes/queryException.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/queryException.html" class="more">« More »</a>
+</div>
+<div id="rowSet" class="element ajax clickable class">
+<h1>rowSet<a href="../classes/rowSet.html">¶</a>
+</h1>
+<p class="short_description">Un conjunto de registros devueltos de una consulta en la base de datos.</p>
+<div class="details collapse"></div>
+<a href="../classes/rowSet.html" class="more">« More »</a>
+</div>
+<div id="sql" class="element ajax clickable class">
+<h1>sql<a href="../classes/sql.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/sql.html" class="more">« More »</a>
+</div>
+<div id="sql" class="element ajax clickable class">
+<h1>sql<a href="../classes/sql.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/sql.html" class="more">« More »</a>
+</div>
+<div id="sqlException" class="element ajax clickable class">
+<h1>sqlException<a href="../classes/sqlException.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/sqlException.html" class="more">« More »</a>
+</div>
+<div id="sqlResult" class="element ajax clickable class">
+<h1>sqlResult<a href="../classes/sqlResult.html">¶</a>
+</h1>
+<p class="short_description">Gestiona la manipulación de registros devueltos tras una consulta.</p>
+<div class="details collapse"></div>
+<a href="../classes/sqlResult.html" class="more">« More »</a>
+</div>
+<div id="tableRow" class="element ajax clickable class">
+<h1>tableRow<a href="../classes/tableRow.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/tableRow.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-02-05T00:18:22+01:00.<br></footer></div>
+</div>
+</body>
+</html>

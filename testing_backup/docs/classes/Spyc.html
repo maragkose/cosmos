@@ -1,0 +1,1002 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Spyc</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Etiquetas.html"><i class="icon-folder-open"></i> Etiquetas</a></li>
+<li><a href="../packages/Form.html"><i class="icon-folder-open"></i> Form</a></li>
+<li><a href="../packages/Item.html"><i class="icon-folder-open"></i> Item</a></li>
+<li><a href="../packages/ItemsGroup.html"><i class="icon-folder-open"></i> ItemsGroup</a></li>
+<li><a href="../packages/Respuestas.html"><i class="icon-folder-open"></i> Respuestas</a></li>
+<li><a href="../packages/Spyc.html"><i class="icon-folder-open"></i> Spyc</a></li>
+<li><a href="../packages/config.html"><i class="icon-folder-open"></i> config</a></li>
+<li><a href="../packages/utils.html"><i class="icon-folder-open"></i> utils</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">314</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_YAMLDump" title="YAMLDump :: Dump YAML from PHP array statically"><span class="description">Dump YAML from PHP array statically</span><pre>YAMLDump()</pre></a></li>
+<li class="method public "><a href="#method_YAMLLoad" title="YAMLLoad :: Load YAML into a PHP array statically"><span class="description">Load YAML into a PHP array statically</span><pre>YAMLLoad()</pre></a></li>
+<li class="method public "><a href="#method_YAMLLoadString" title="YAMLLoadString :: Load a string of YAML into a PHP array statically"><span class="description">Load a string of YAML into a PHP array statically</span><pre>YAMLLoadString()</pre></a></li>
+<li class="method public "><a href="#method_dump" title="dump :: Dump PHP array to YAML"><span class="description">Dump PHP array to YAML</span><pre>dump()</pre></a></li>
+<li class="method public "><a href="#method_load" title="load :: Load a valid YAML string to Spyc."><span class="description">Load a valid YAML string to Spyc.</span><pre>load()</pre></a></li>
+<li class="method public "><a href="#method_loadFile" title="loadFile :: Load a valid YAML file to Spyc."><span class="description">Load a valid YAML file to Spyc.</span><pre>loadFile()</pre></a></li>
+<li class="method public "><a href="#method_revertLiteralPlaceHolder" title="revertLiteralPlaceHolder :: "><span class="description">revertLiteralPlaceHolder()
+        </span><pre>revertLiteralPlaceHolder()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method___load" title="__load :: "><span class="description">__load()
+        </span><pre>__load()</pre></a></li>
+<li class="method private "><a href="#method___loadString" title="__loadString :: "><span class="description">__loadString()
+        </span><pre>__loadString()</pre></a></li>
+<li class="method private "><a href="#method__doFolding" title="_doFolding :: Folds a string of text, if necessary"><span class="description">Folds a string of text, if necessary</span><pre>_doFolding()</pre></a></li>
+<li class="method private "><a href="#method__doLiteralBlock" title="_doLiteralBlock :: Creates a literal block for dumping"><span class="description">Creates a literal block for dumping</span><pre>_doLiteralBlock()</pre></a></li>
+<li class="method private "><a href="#method__dumpNode" title="_dumpNode :: Returns YAML from a key and a value"><span class="description">Returns YAML from a key and a value</span><pre>_dumpNode()</pre></a></li>
+<li class="method private "><a href="#method__inlineEscape" title="_inlineEscape :: Used in inlines to check for more inlines or quoted strings"><span class="description">Used in inlines to check for more inlines or quoted strings</span><pre>_inlineEscape()</pre></a></li>
+<li class="method private "><a href="#method__parseLine" title="_parseLine :: Parses YAML code and returns an array for a node"><span class="description">Parses YAML code and returns an array for a node</span><pre>_parseLine()</pre></a></li>
+<li class="method private "><a href="#method__toType" title="_toType :: Finds the type of the passed value, returns the value as the new type."><span class="description">Finds the type of the passed value, returns the value as the new type.</span><pre>_toType()</pre></a></li>
+<li class="method private "><a href="#method__yamlize" title="_yamlize :: Attempts to convert a key / value array item to YAML"><span class="description">Attempts to convert a key / value array item to YAML</span><pre>_yamlize()</pre></a></li>
+<li class="method private "><a href="#method__yamlizeArray" title="_yamlizeArray :: Attempts to convert an array to YAML"><span class="description">Attempts to convert an array to YAML</span><pre>_yamlizeArray()</pre></a></li>
+<li class="method private "><a href="#method_addArray" title="addArray :: "><span class="description">addArray()
+        </span><pre>addArray()</pre></a></li>
+<li class="method private "><a href="#method_addArrayInline" title="addArrayInline :: "><span class="description">addArrayInline()
+        </span><pre>addArrayInline()</pre></a></li>
+<li class="method private "><a href="#method_addGroup" title="addGroup :: "><span class="description">addGroup()
+        </span><pre>addGroup()</pre></a></li>
+<li class="method private "><a href="#method_addLiteralLine" title="addLiteralLine :: "><span class="description">addLiteralLine()
+        </span><pre>addLiteralLine()</pre></a></li>
+<li class="method private "><a href="#method_clearBiggerPathValues" title="clearBiggerPathValues :: "><span class="description">clearBiggerPathValues()
+        </span><pre>clearBiggerPathValues()</pre></a></li>
+<li class="method private "><a href="#method_getParentPathByIndent" title="getParentPathByIndent :: "><span class="description">getParentPathByIndent()
+        </span><pre>getParentPathByIndent()</pre></a></li>
+<li class="method private "><a href="#method_greedilyNeedNextLine" title="greedilyNeedNextLine :: "><span class="description">greedilyNeedNextLine()
+        </span><pre>greedilyNeedNextLine()</pre></a></li>
+<li class="method private "><a href="#method_isArrayElement" title="isArrayElement :: "><span class="description">isArrayElement()
+        </span><pre>isArrayElement()</pre></a></li>
+<li class="method private "><a href="#method_isComment" title="isComment :: "><span class="description">isComment()
+        </span><pre>isComment()</pre></a></li>
+<li class="method private "><a href="#method_isEmpty" title="isEmpty :: "><span class="description">isEmpty()
+        </span><pre>isEmpty()</pre></a></li>
+<li class="method private "><a href="#method_isHashElement" title="isHashElement :: "><span class="description">isHashElement()
+        </span><pre>isHashElement()</pre></a></li>
+<li class="method private "><a href="#method_isLiteral" title="isLiteral :: "><span class="description">isLiteral()
+        </span><pre>isLiteral()</pre></a></li>
+<li class="method private "><a href="#method_isPlainArray" title="isPlainArray :: "><span class="description">isPlainArray()
+        </span><pre>isPlainArray()</pre></a></li>
+<li class="method private "><a href="#method_literalBlockContinues" title="literalBlockContinues :: "><span class="description">literalBlockContinues()
+        </span><pre>literalBlockContinues()</pre></a></li>
+<li class="method private "><a href="#method_loadFromSource" title="loadFromSource :: "><span class="description">loadFromSource()
+        </span><pre>loadFromSource()</pre></a></li>
+<li class="method private "><a href="#method_loadFromString" title="loadFromString :: "><span class="description">loadFromString()
+        </span><pre>loadFromString()</pre></a></li>
+<li class="method private "><a href="#method_loadWithSource" title="loadWithSource :: "><span class="description">loadWithSource()
+        </span><pre>loadWithSource()</pre></a></li>
+<li class="method private "><a href="#method_nodeContainsGroup" title="nodeContainsGroup :: "><span class="description">nodeContainsGroup()
+        </span><pre>nodeContainsGroup()</pre></a></li>
+<li class="method private "><a href="#method_referenceContentsByAlias" title="referenceContentsByAlias :: "><span class="description">referenceContentsByAlias()
+        </span><pre>referenceContentsByAlias()</pre></a></li>
+<li class="method private "><a href="#method_returnArrayElement" title="returnArrayElement :: "><span class="description">returnArrayElement()
+        </span><pre>returnArrayElement()</pre></a></li>
+<li class="method private "><a href="#method_returnKeyValuePair" title="returnKeyValuePair :: "><span class="description">returnKeyValuePair()
+        </span><pre>returnKeyValuePair()</pre></a></li>
+<li class="method private "><a href="#method_returnMappedSequence" title="returnMappedSequence :: "><span class="description">returnMappedSequence()
+        </span><pre>returnMappedSequence()</pre></a></li>
+<li class="method private "><a href="#method_returnMappedValue" title="returnMappedValue :: "><span class="description">returnMappedValue()
+        </span><pre>returnMappedValue()</pre></a></li>
+<li class="method private "><a href="#method_returnPlainArray" title="returnPlainArray :: "><span class="description">returnPlainArray()
+        </span><pre>returnPlainArray()</pre></a></li>
+<li class="method private "><a href="#method_startsLiteralBlock" title="startsLiteralBlock :: "><span class="description">startsLiteralBlock()
+        </span><pre>startsLiteralBlock()</pre></a></li>
+<li class="method private "><a href="#method_startsMappedSequence" title="startsMappedSequence :: "><span class="description">startsMappedSequence()
+        </span><pre>startsMappedSequence()</pre></a></li>
+<li class="method private "><a href="#method_startsMappedValue" title="startsMappedValue :: "><span class="description">startsMappedValue()
+        </span><pre>startsMappedValue()</pre></a></li>
+<li class="method private "><a href="#method_stripGroup" title="stripGroup :: "><span class="description">stripGroup()
+        </span><pre>stripGroup()</pre></a></li>
+<li class="method private "><a href="#method_stripIndent" title="stripIndent :: "><span class="description">stripIndent()
+        </span><pre>stripIndent()</pre></a></li>
+<li class="method private "><a href="#method_unquote" title="unquote :: "><span class="description">unquote()
+        </span><pre>unquote()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property__nodeId" title="$_nodeId :: "><span class="description"></span><pre>$_nodeId</pre></a></li>
+<li class="property public "><a href="#property_setting_dump_force_quotes" title="$setting_dump_force_quotes :: Setting this to true will force YAMLDump to enclose any string value in
+quotes."><span class="description"></span><pre>$setting_dump_force_quotes</pre></a></li>
+<li class="property public "><a href="#property_setting_use_syck_is_possible" title="$setting_use_syck_is_possible :: Setting this to true will forse YAMLLoad to use syck_load function when
+possible."><span class="description"></span><pre>$setting_use_syck_is_possible</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_LiteralPlaceHolder" title="$LiteralPlaceHolder :: "><span class="description"></span><pre>$LiteralPlaceHolder</pre></a></li>
+<li class="property private "><a href="#property_SavedGroups" title="$SavedGroups :: "><span class="description"></span><pre>$SavedGroups</pre></a></li>
+<li class="property private "><a href="#property__containsGroupAlias" title="$_containsGroupAlias :: "><span class="description"></span><pre>$_containsGroupAlias</pre></a></li>
+<li class="property private "><a href="#property__containsGroupAnchor" title="$_containsGroupAnchor :: "><span class="description"></span><pre>$_containsGroupAnchor</pre></a></li>
+<li class="property private "><a href="#property__dumpIndent" title="$_dumpIndent :: "><span class="description"></span><pre>$_dumpIndent</pre></a></li>
+<li class="property private "><a href="#property__dumpWordWrap" title="$_dumpWordWrap :: "><span class="description"></span><pre>$_dumpWordWrap</pre></a></li>
+<li class="property private "><a href="#property_delayedPath" title="$delayedPath :: Path modifier that should be applied after adding current element."><span class="description"></span><pre>$delayedPath</pre></a></li>
+<li class="property private "><a href="#property_indent" title="$indent :: "><span class="description"></span><pre>$indent</pre></a></li>
+<li class="property private "><a href="#property_path" title="$path :: "><span class="description"></span><pre>$path</pre></a></li>
+<li class="property private "><a href="#property_result" title="$result :: "><span class="description"></span><pre>$result</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul><li class="constant  "><a href="#constant_REMPTY" title="REMPTY :: "><span class="description">REMPTY</span><pre>REMPTY</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Spyc"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Spyc.html">Spyc</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The Simple PHP YAML Class.</p>
+<div class="details">
+<div class="long_description"><p>This class can be used to read a YAML file and convert its contents
+into a PHP array.  It currently supports a very limited subsection of
+the YAML spec.</p>
+
+<p>Usage:</p>
+
+<pre><code>  $Spyc  = new Spyc;
+  $array = $Spyc->load($file);
+</code></pre>
+
+<p>or:</p>
+
+<pre><code>  $array = Spyc::YAMLLoad($file);
+</code></pre>
+
+<p>or:</p>
+
+<pre><code>  $array = spyc_load_file($file);
+</code></pre></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Spyc.html">Spyc</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_YAMLDump"></a><div class="element clickable method public method_YAMLDump" data-toggle="collapse" data-target=".method_YAMLDump .collapse">
+<h2>Dump YAML from PHP array statically</h2>
+<pre>YAMLDump(array $array, int $indent, int $wordwrap) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The dump method, when supplied with an array, will do its best
+to convert the array into friendly YAML.  Pretty simple.  Feel free to
+save the returned string as nothing.yaml and pass it around.</p>
+
+<p>Oh, and you can decide how big the indent is and what the wordwrap
+for folding is.  Pretty cool -- just pass in 'false' for either if
+you want to use the default.</p>
+
+<p>Indent's default is 2 spaces, wordwrap's default is 40 characters.  And
+you can turn off wordwrap by passing in 0.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$array</h4>
+<code>array</code><p>PHP array</p></div>
+<div class="subelement argument">
+<h4>$indent</h4>
+<code>int</code><p>Pass in false to use the default, which is 2</p></div>
+<div class="subelement argument">
+<h4>$wordwrap</h4>
+<code>int</code><p>Pass in 0 for no wordwrap, false for default (40)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_YAMLLoad"></a><div class="element clickable method public method_YAMLLoad" data-toggle="collapse" data-target=".method_YAMLLoad .collapse">
+<h2>Load YAML into a PHP array statically</h2>
+<pre>YAMLLoad(string $input) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The load method, when supplied with a YAML stream (string or file),
+will do its best to convert YAML in a file into a PHP array.  Pretty
+simple.
+ Usage:</p>
+
+<pre><code>  $array = Spyc::YAMLLoad('lucky.yaml');
+  print_r($array);
+ </code></pre></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$input</h4>
+<code>string</code><p>Path of YAML file or string containing YAML</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_YAMLLoadString"></a><div class="element clickable method public method_YAMLLoadString" data-toggle="collapse" data-target=".method_YAMLLoadString .collapse">
+<h2>Load a string of YAML into a PHP array statically</h2>
+<pre>YAMLLoadString(string $input) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The load method, when supplied with a YAML string, will do its best
+to convert YAML in a string into a PHP array.  Pretty simple.</p>
+
+<p>Note: use this function if you don't want files from the file system
+loaded and processed as YAML.  This is of interest to people concerned
+about security whose input is from a string.</p>
+
+<p>Usage:</p>
+
+<pre><code>  $array = Spyc::YAMLLoadString("---\n0: hello world\n");
+  print_r($array);
+ </code></pre></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$input</h4>
+<code>string</code><p>String containing YAML</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_dump"></a><div class="element clickable method public method_dump" data-toggle="collapse" data-target=".method_dump .collapse">
+<h2>Dump PHP array to YAML</h2>
+<pre>dump(array $array, int $indent, int $wordwrap) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The dump method, when supplied with an array, will do its best
+to convert the array into friendly YAML.  Pretty simple.  Feel free to
+save the returned string as tasteful.yaml and pass it around.</p>
+
+<p>Oh, and you can decide how big the indent is and what the wordwrap
+for folding is.  Pretty cool -- just pass in 'false' for either if
+you want to use the default.</p>
+
+<p>Indent's default is 2 spaces, wordwrap's default is 40 characters.  And
+you can turn off wordwrap by passing in 0.</p></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$array</h4>
+<code>array</code><p>PHP array</p></div>
+<div class="subelement argument">
+<h4>$indent</h4>
+<code>int</code><p>Pass in false to use the default, which is 2</p></div>
+<div class="subelement argument">
+<h4>$wordwrap</h4>
+<code>int</code><p>Pass in 0 for no wordwrap, false for default (40)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_load"></a><div class="element clickable method public method_load" data-toggle="collapse" data-target=".method_load .collapse">
+<h2>Load a valid YAML string to Spyc.</h2>
+<pre>load(string $input) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$input</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_loadFile"></a><div class="element clickable method public method_loadFile" data-toggle="collapse" data-target=".method_loadFile .collapse">
+<h2>Load a valid YAML file to Spyc.</h2>
+<pre>loadFile(string $file) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_revertLiteralPlaceHolder"></a><div class="element clickable method public method_revertLiteralPlaceHolder" data-toggle="collapse" data-target=".method_revertLiteralPlaceHolder .collapse">
+<h2>revertLiteralPlaceHolder()
+        </h2>
+<pre>revertLiteralPlaceHolder($lineArray, $literalBlock) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$lineArray</h4></div>
+<div class="subelement argument"><h4>$literalBlock</h4></div>
+</div></div>
+</div>
+<a id="method___load"></a><div class="element clickable method private method___load" data-toggle="collapse" data-target=".method___load .collapse">
+<h2>__load()
+        </h2>
+<pre>__load($input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$input</h4></div>
+</div></div>
+</div>
+<a id="method___loadString"></a><div class="element clickable method private method___loadString" data-toggle="collapse" data-target=".method___loadString .collapse">
+<h2>__loadString()
+        </h2>
+<pre>__loadString($input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$input</h4></div>
+</div></div>
+</div>
+<a id="method__doFolding"></a><div class="element clickable method private method__doFolding" data-toggle="collapse" data-target=".method__doFolding .collapse">
+<h2>Folds a string of text, if necessary</h2>
+<pre>_doFolding($value, $indent) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4><p>The string you wish to fold</p></div>
+<div class="subelement argument"><h4>$indent</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__doLiteralBlock"></a><div class="element clickable method private method__doLiteralBlock" data-toggle="collapse" data-target=".method__doLiteralBlock .collapse">
+<h2>Creates a literal block for dumping</h2>
+<pre>_doLiteralBlock($value, $indent) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$indent</h4><p>int The value of the indent</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__dumpNode"></a><div class="element clickable method private method__dumpNode" data-toggle="collapse" data-target=".method__dumpNode .collapse">
+<h2>Returns YAML from a key and a value</h2>
+<pre>_dumpNode($key, $value, $indent, $previous_key, $first_key, $source_array) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4><p>The name of the key</p></div>
+<div class="subelement argument">
+<h4>$value</h4><p>The value of the item</p></div>
+<div class="subelement argument">
+<h4>$indent</h4><p>The indent of the current node</p></div>
+<div class="subelement argument"><h4>$previous_key</h4></div>
+<div class="subelement argument"><h4>$first_key</h4></div>
+<div class="subelement argument"><h4>$source_array</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__inlineEscape"></a><div class="element clickable method private method__inlineEscape" data-toggle="collapse" data-target=".method__inlineEscape .collapse">
+<h2>Used in inlines to check for more inlines or quoted strings</h2>
+<pre>_inlineEscape($inline) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$inline</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__parseLine"></a><div class="element clickable method private method__parseLine" data-toggle="collapse" data-target=".method__parseLine .collapse">
+<h2>Parses YAML code and returns an array for a node</h2>
+<pre>_parseLine(string $line) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$line</h4>
+<code>string</code><p>A line from the YAML file</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__toType"></a><div class="element clickable method private method__toType" data-toggle="collapse" data-target=".method__toType .collapse">
+<h2>Finds the type of the passed value, returns the value as the new type.</h2>
+<pre>_toType(string $value) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method__yamlize"></a><div class="element clickable method private method__yamlize" data-toggle="collapse" data-target=".method__yamlize .collapse">
+<h2>Attempts to convert a key / value array item to YAML</h2>
+<pre>_yamlize($key, $value, $indent, $previous_key, $first_key, $source_array) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4><p>The name of the key</p></div>
+<div class="subelement argument">
+<h4>$value</h4><p>The value of the item</p></div>
+<div class="subelement argument">
+<h4>$indent</h4><p>The indent of the current node</p></div>
+<div class="subelement argument"><h4>$previous_key</h4></div>
+<div class="subelement argument"><h4>$first_key</h4></div>
+<div class="subelement argument"><h4>$source_array</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__yamlizeArray"></a><div class="element clickable method private method__yamlizeArray" data-toggle="collapse" data-target=".method__yamlizeArray .collapse">
+<h2>Attempts to convert an array to YAML</h2>
+<pre>_yamlizeArray($array, $indent) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$array</h4><p>The array you want to convert</p></div>
+<div class="subelement argument">
+<h4>$indent</h4><p>The indent of the current level</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_addArray"></a><div class="element clickable method private method_addArray" data-toggle="collapse" data-target=".method_addArray .collapse">
+<h2>addArray()
+        </h2>
+<pre>addArray($incoming_data, $incoming_indent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$incoming_data</h4></div>
+<div class="subelement argument"><h4>$incoming_indent</h4></div>
+</div></div>
+</div>
+<a id="method_addArrayInline"></a><div class="element clickable method private method_addArrayInline" data-toggle="collapse" data-target=".method_addArrayInline .collapse">
+<h2>addArrayInline()
+        </h2>
+<pre>addArrayInline($array, $indent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$array</h4></div>
+<div class="subelement argument"><h4>$indent</h4></div>
+</div></div>
+</div>
+<a id="method_addGroup"></a><div class="element clickable method private method_addGroup" data-toggle="collapse" data-target=".method_addGroup .collapse">
+<h2>addGroup()
+        </h2>
+<pre>addGroup($line, $group) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+<div class="subelement argument"><h4>$group</h4></div>
+</div></div>
+</div>
+<a id="method_addLiteralLine"></a><div class="element clickable method private method_addLiteralLine" data-toggle="collapse" data-target=".method_addLiteralLine .collapse">
+<h2>addLiteralLine()
+        </h2>
+<pre>addLiteralLine($literalBlock, $line, $literalBlockStyle, $indent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$literalBlock</h4></div>
+<div class="subelement argument"><h4>$line</h4></div>
+<div class="subelement argument"><h4>$literalBlockStyle</h4></div>
+<div class="subelement argument"><h4>$indent</h4></div>
+</div></div>
+</div>
+<a id="method_clearBiggerPathValues"></a><div class="element clickable method private method_clearBiggerPathValues" data-toggle="collapse" data-target=".method_clearBiggerPathValues .collapse">
+<h2>clearBiggerPathValues()
+        </h2>
+<pre>clearBiggerPathValues($indent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$indent</h4></div>
+</div></div>
+</div>
+<a id="method_getParentPathByIndent"></a><div class="element clickable method private method_getParentPathByIndent" data-toggle="collapse" data-target=".method_getParentPathByIndent .collapse">
+<h2>getParentPathByIndent()
+        </h2>
+<pre>getParentPathByIndent($indent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$indent</h4></div>
+</div></div>
+</div>
+<a id="method_greedilyNeedNextLine"></a><div class="element clickable method private method_greedilyNeedNextLine" data-toggle="collapse" data-target=".method_greedilyNeedNextLine .collapse">
+<h2>greedilyNeedNextLine()
+        </h2>
+<pre>greedilyNeedNextLine($line) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_isArrayElement"></a><div class="element clickable method private method_isArrayElement" data-toggle="collapse" data-target=".method_isArrayElement .collapse">
+<h2>isArrayElement()
+        </h2>
+<pre>isArrayElement($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_isComment"></a><div class="element clickable method private method_isComment" data-toggle="collapse" data-target=".method_isComment .collapse">
+<h2>isComment()
+        </h2>
+<pre>isComment($line) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_isEmpty"></a><div class="element clickable method private method_isEmpty" data-toggle="collapse" data-target=".method_isEmpty .collapse">
+<h2>isEmpty()
+        </h2>
+<pre>isEmpty($line) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_isHashElement"></a><div class="element clickable method private method_isHashElement" data-toggle="collapse" data-target=".method_isHashElement .collapse">
+<h2>isHashElement()
+        </h2>
+<pre>isHashElement($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_isLiteral"></a><div class="element clickable method private method_isLiteral" data-toggle="collapse" data-target=".method_isLiteral .collapse">
+<h2>isLiteral()
+        </h2>
+<pre>isLiteral($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_isPlainArray"></a><div class="element clickable method private method_isPlainArray" data-toggle="collapse" data-target=".method_isPlainArray .collapse">
+<h2>isPlainArray()
+        </h2>
+<pre>isPlainArray($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_literalBlockContinues"></a><div class="element clickable method private method_literalBlockContinues" data-toggle="collapse" data-target=".method_literalBlockContinues .collapse">
+<h2>literalBlockContinues()
+        </h2>
+<pre>literalBlockContinues($line, $lineIndent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+<div class="subelement argument"><h4>$lineIndent</h4></div>
+</div></div>
+</div>
+<a id="method_loadFromSource"></a><div class="element clickable method private method_loadFromSource" data-toggle="collapse" data-target=".method_loadFromSource .collapse">
+<h2>loadFromSource()
+        </h2>
+<pre>loadFromSource($input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$input</h4></div>
+</div></div>
+</div>
+<a id="method_loadFromString"></a><div class="element clickable method private method_loadFromString" data-toggle="collapse" data-target=".method_loadFromString .collapse">
+<h2>loadFromString()
+        </h2>
+<pre>loadFromString($input) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$input</h4></div>
+</div></div>
+</div>
+<a id="method_loadWithSource"></a><div class="element clickable method private method_loadWithSource" data-toggle="collapse" data-target=".method_loadWithSource .collapse">
+<h2>loadWithSource()
+        </h2>
+<pre>loadWithSource($Source) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$Source</h4></div>
+</div></div>
+</div>
+<a id="method_nodeContainsGroup"></a><div class="element clickable method private method_nodeContainsGroup" data-toggle="collapse" data-target=".method_nodeContainsGroup .collapse">
+<h2>nodeContainsGroup()
+        </h2>
+<pre>nodeContainsGroup($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_referenceContentsByAlias"></a><div class="element clickable method private method_referenceContentsByAlias" data-toggle="collapse" data-target=".method_referenceContentsByAlias .collapse">
+<h2>referenceContentsByAlias()
+        </h2>
+<pre>referenceContentsByAlias($alias) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$alias</h4></div>
+</div></div>
+</div>
+<a id="method_returnArrayElement"></a><div class="element clickable method private method_returnArrayElement" data-toggle="collapse" data-target=".method_returnArrayElement .collapse">
+<h2>returnArrayElement()
+        </h2>
+<pre>returnArrayElement($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_returnKeyValuePair"></a><div class="element clickable method private method_returnKeyValuePair" data-toggle="collapse" data-target=".method_returnKeyValuePair .collapse">
+<h2>returnKeyValuePair()
+        </h2>
+<pre>returnKeyValuePair($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_returnMappedSequence"></a><div class="element clickable method private method_returnMappedSequence" data-toggle="collapse" data-target=".method_returnMappedSequence .collapse">
+<h2>returnMappedSequence()
+        </h2>
+<pre>returnMappedSequence($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_returnMappedValue"></a><div class="element clickable method private method_returnMappedValue" data-toggle="collapse" data-target=".method_returnMappedValue .collapse">
+<h2>returnMappedValue()
+        </h2>
+<pre>returnMappedValue($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_returnPlainArray"></a><div class="element clickable method private method_returnPlainArray" data-toggle="collapse" data-target=".method_returnPlainArray .collapse">
+<h2>returnPlainArray()
+        </h2>
+<pre>returnPlainArray($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_startsLiteralBlock"></a><div class="element clickable method private method_startsLiteralBlock" data-toggle="collapse" data-target=".method_startsLiteralBlock .collapse">
+<h2>startsLiteralBlock()
+        </h2>
+<pre>startsLiteralBlock($line) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_startsMappedSequence"></a><div class="element clickable method private method_startsMappedSequence" data-toggle="collapse" data-target=".method_startsMappedSequence .collapse">
+<h2>startsMappedSequence()
+        </h2>
+<pre>startsMappedSequence($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_startsMappedValue"></a><div class="element clickable method private method_startsMappedValue" data-toggle="collapse" data-target=".method_startsMappedValue .collapse">
+<h2>startsMappedValue()
+        </h2>
+<pre>startsMappedValue($line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+</div></div>
+</div>
+<a id="method_stripGroup"></a><div class="element clickable method private method_stripGroup" data-toggle="collapse" data-target=".method_stripGroup .collapse">
+<h2>stripGroup()
+        </h2>
+<pre>stripGroup($line, $group) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+<div class="subelement argument"><h4>$group</h4></div>
+</div></div>
+</div>
+<a id="method_stripIndent"></a><div class="element clickable method private method_stripIndent" data-toggle="collapse" data-target=".method_stripIndent .collapse">
+<h2>stripIndent()
+        </h2>
+<pre>stripIndent($line, $indent) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$line</h4></div>
+<div class="subelement argument"><h4>$indent</h4></div>
+</div></div>
+</div>
+<a id="method_unquote"></a><div class="element clickable method private method_unquote" data-toggle="collapse" data-target=".method_unquote .collapse">
+<h2>unquote()
+        </h2>
+<pre>unquote($value) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__nodeId"> </a><div class="element clickable property public property__nodeId" data-toggle="collapse" data-target=".property__nodeId .collapse">
+<h2></h2>
+<pre>$_nodeId </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_setting_dump_force_quotes"> </a><div class="element clickable property public property_setting_dump_force_quotes" data-toggle="collapse" data-target=".property_setting_dump_force_quotes .collapse">
+<h2></h2>
+<pre>$setting_dump_force_quotes : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>False by default.</p></div></div></div>
+</div>
+<a id="property_setting_use_syck_is_possible"> </a><div class="element clickable property public property_setting_use_syck_is_possible" data-toggle="collapse" data-target=".property_setting_use_syck_is_possible .collapse">
+<h2></h2>
+<pre>$setting_use_syck_is_possible : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>False by default.</p></div></div></div>
+</div>
+<a id="property_LiteralPlaceHolder"> </a><div class="element clickable property private property_LiteralPlaceHolder" data-toggle="collapse" data-target=".property_LiteralPlaceHolder .collapse">
+<h2></h2>
+<pre>$LiteralPlaceHolder </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_SavedGroups"> </a><div class="element clickable property private property_SavedGroups" data-toggle="collapse" data-target=".property_SavedGroups .collapse">
+<h2></h2>
+<pre>$SavedGroups </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__containsGroupAlias"> </a><div class="element clickable property private property__containsGroupAlias" data-toggle="collapse" data-target=".property__containsGroupAlias .collapse">
+<h2></h2>
+<pre>$_containsGroupAlias </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__containsGroupAnchor"> </a><div class="element clickable property private property__containsGroupAnchor" data-toggle="collapse" data-target=".property__containsGroupAnchor .collapse">
+<h2></h2>
+<pre>$_containsGroupAnchor </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__dumpIndent"> </a><div class="element clickable property private property__dumpIndent" data-toggle="collapse" data-target=".property__dumpIndent .collapse">
+<h2></h2>
+<pre>$_dumpIndent </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__dumpWordWrap"> </a><div class="element clickable property private property__dumpWordWrap" data-toggle="collapse" data-target=".property__dumpWordWrap .collapse">
+<h2></h2>
+<pre>$_dumpWordWrap </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_delayedPath"> </a><div class="element clickable property private property_delayedPath" data-toggle="collapse" data-target=".property_delayedPath .collapse">
+<h2></h2>
+<pre>$delayedPath : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_indent"> </a><div class="element clickable property private property_indent" data-toggle="collapse" data-target=".property_indent .collapse">
+<h2></h2>
+<pre>$indent </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_path"> </a><div class="element clickable property private property_path" data-toggle="collapse" data-target=".property_path .collapse">
+<h2></h2>
+<pre>$path </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_result"> </a><div class="element clickable property private property_result" data-toggle="collapse" data-target=".property_result .collapse">
+<h2></h2>
+<pre>$result </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_REMPTY"> </a><div class="element clickable constant  constant_REMPTY" data-toggle="collapse" data-target=".constant_REMPTY .collapse">
+<h2>REMPTY</h2>
+<pre>REMPTY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-02-05T00:18:26+01:00.<br></footer></div>
+</div>
+</body>
+</html>

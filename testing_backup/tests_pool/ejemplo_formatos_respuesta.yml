@@ -1,0 +1,79 @@
+conjunto1: 
+  titulo: "Título del conjunto de ítems" 
+  descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+  items: 
+    item1: 
+      texto: "Ítem de respuesta abierta"
+      formato: abierta
+    item1b: 
+      texto: "Ítem de respuesta abierta amplia"
+      formato: abierta_amplia
+    item2:
+      texto: "Ítem de respuesta binaria"
+      formato: binaria
+      respuestas:
+        - Hombre
+        - Mujer
+    item3:
+      texto: "Ítem de respuesta única"
+      formato: unica
+      respuestas:
+        - Opción 1
+        - Opción 2
+        - Opción 3
+    item3b:
+      texto: "Ítem de respuesta única con ítem adjunto de respuesta desplegable"
+      formato: unica
+      respuestas:
+        - Opción 1
+        - Opción 2
+        - Opción 3
+      item_adjunto:
+        texto: "Ítem de respuesta desplegable"
+        formato: desplegable
+        respuestas:
+          - Opción 1
+          - Opción 2
+          - Opción 3
+    item4:
+      texto: "Ítem con listado de respuestas desplegable"
+      formato: desplegable
+      respuestas:
+        - Opción 1
+        - Opción 2
+        - Opción 3
+    item4b:
+      texto: "Ítem de respuesta deplegable con ítem adjunto de respuesta abierta"
+      formato: desplegable
+      respuestas:
+        - Opción 1
+        - Opción 2
+        - Opción 3
+      item_adjunto: 
+        texto: "Ítem de respuesta abierta"
+        formato: abierta
+    item5:
+      texto: "Ítem de respuesta múltiple"
+      formato: multiple
+      respuestas:
+        - Opción 1
+        - Opción 2
+        - Opción 3
+    item6:
+      texto: "Ítem de respuesta múltiple multilínea"
+      formato: multiple_multilinea
+      respuestas:
+        - Opción 1
+        - Opción 2
+        - Opción 3
+    item6b:
+      texto: "Ítem de respuesta múltiple multilínea con ítem adjunto de respuesta abierta"
+      formato: multiple_multilinea
+      respuestas:
+        - Opción 1
+        - Opción 2
+        - Opción 3
+      item_adjunto: 
+        texto: "Ítem de respuesta abierta"
+        formato: abierta
+    

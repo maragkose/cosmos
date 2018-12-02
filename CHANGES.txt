@@ -1,0 +1,13 @@
+- Nuevo parámetro en config.php : TEXT_ID_CHAR_LIMIT.  Número de caracteres del texto del ítem utilizados para generar el identificador (texto_ids: s).
+
+- Corregida la notificación de errores por exceder la longitud del campo de la bae de datos ("Error en '' con mensaje ''). Limitada la longitud de campos MySQL creados automáticamente a 50 caracteres. El valor de longitud se encuentra en la constante DEFAULT_LENGTH de /includes/objoo_trunk/field.php.
+
+- Nuevo formato de respuesta: abierta_amplia. Genera un cuadro de texto para respuestas de gran extensión.
+
+- Corregida la plantilla adjunto_desplegable. Ahora muestra el texto del ítem.
+
+- Nuevo parámetro de configuración general: estilo. Permite especificar la hoja de estilos a utilizar en el cuestionario, la cual deberá encontrarse en el directorio html. Es un atributo de la cabecera del cuestionario. Uso: estilo: nombre_hoja_estilos.css
+
+- Corregido el error que se producía al generar el identificador de ítems con el mismo texto y formato de respuesta pertenecientes a diferentes subconjuntos de un mismo nivel. 
+
+- Clase 'num' en los números de ítems. Ahora es posible ocultarlos desde css.

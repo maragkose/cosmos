@@ -1,0 +1,11 @@
+conjunto1: 
+  titulo: "Título del conjunto de ítems" 
+  descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+  etiquetas:
+    num: 4
+    min: Nunca
+    max: Siempre
+  items: 
+    item1: 
+      texto: "Elige una opción"
+      formato: likert

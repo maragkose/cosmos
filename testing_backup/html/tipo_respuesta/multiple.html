@@ -1,0 +1,25 @@
+<table class="tipo-respuesta-multiple">
+    <tr>
+        <td class="item-pregunta">
+            <span class='num'><?php echo $itemNum.". ";?></span><?php echo $item->getTextoPregunta();?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="respuestas">
+                <tr>
+                    <?php foreach($item->getOpcionesRespuesta() as $respuestaId=>$respuesta){?>
+                    <td>
+                        <input type='checkbox' 
+                               name="<?php echo $itemsGroup->getFullItemId($item)?>[]" 
+                               value=<?php echo $respuestaId?>>  
+                        <label>
+                            <?php echo $respuesta?>
+                        </label>
+                    </td>
+                    <?php }?>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

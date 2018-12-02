@@ -1,0 +1,93 @@
+        .lavaLampBottomStyle {
+            position: relative;
+            height: 40px;
+            background-color: none;
+            padding: 0px;
+            margin: 0px 0;
+            overflow: hidden;
+            border: 0px solid gray;
+        }
+                .lavaLampBottomStyle li {
+                    float: left;
+                    list-style: none;
+                }
+                    .lavaLampBottomStyle li.back {
+                        border-bottom: 5px solid orange;
+                        width: 0px;
+                        height: 50px;
+                        z-index: 8;
+                        position: absolute;
+                    }
+                    .lavaLampBottomStyle li a {
+                        font: bold 12px arial;
+                        text-decoration: none;
+                        color: #000;
+                        outline: none;
+                        text-align: center;
+                        top: 1px;
+                        text-transform: uppercase;
+                        letter-spacing: 0;
+                        z-index: 10;
+                        display: inline-block;
+                        float: left;
+                        height: 70px;
+                        position: relative;
+                        overflow: hidden;
+                        margin: auto 1px;
+                    }   
+                        .lavaLampBottomStyle li a:link, .lavaLampBottomStyle li a:visited {
+			 width:120px;
+			 height:50px;
+                         display:inline-block;
+		         font-weight:bold;
+	       		 color:#FFFFFF;
+			 background-color:#666666;
+			 text-align:center;
+			 padding-top:10px;
+			 text-decoration:none;
+			 text-transform:uppercase;
+                        }                     
+                        .lavaLampBottomStyle li a:hover, .lavaLampBottomStyle li a:active {
+			 background-color:#333333;
+                        }                     
+						
+.comboboxContainer { border-left: solid 2px #777; border-top: solid 2px #777; border-right: solid 1px #ccc; border-bottom: solid 1px #ccc; } 
+
+.comboboxValueContainer { background: url(/images/bluegradient_content.gif) repeat-x left top; }
+
+.comboboxValueContent { padding-left: 3px; text-transform: uppercase; } 
+
+.comboboxDropDownContainer { border-right: solid 1px #000; border-bottom: solid 1px #000; border-left: solid 1px #aaa; border-top: solid 1px #aaa; background: #fff; overflow: hidden; padding-left: 3px; } 
+
+.comboboxDropDownButton { width: 16px; height: 18px; background-image: url(/images/trigger.gif); } 
+
+.comboboxGroupItemHeader { display: inline; background: #99cccc; color: #000; font-family: Impact; } 
+
+.comboboxGroupItemContainer { padding-left: 10px; } 
+
+.comboboxItem { background: #fff; color: #000; text-transform: lowercase; font-weight: normal; font-style: normal; } 
+
+
+.comboboxItemHover { background-color: #999; color: #fff; text-transform: uppercase; padding-left: 4px; }
+
+like panels.
+.slideHeader
+{
+  height:     20px;
+  background: Blue;
+  color:      White;
+}
+
+.slideBody
+{
+  background: #ffffcc;
+  padding:    5px;
+}
+
+.slidePanel
+{
+  width:      100%;
+  float:      left;
+  margin:     5px;
+}
+						

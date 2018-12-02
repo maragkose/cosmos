@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title><?php echo strip_tags($form->getTitle())?></title>
+        <link rel="stylesheet" type="text/css" href="html/<?php echo $form->getStyleSheet()?>" media="all">
+        <link rel="stylesheet" type="text/css" href="html/print.css" media="print">
+        <script type="text/javascript" src="html/js/jquery.js"></script>
+        <script type="text/javascript" src="html/js/jquery.validate.js"></script>
+        <script type="text/javascript">
+            // Navegadores compatibles con el sistema de validación de campos
+            function okBrowser(){
+                if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ //test for MSIE x.x;{
+                    var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a numbe
+                }
+                if(ieversion<=7){
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+        
+        <?php if($form->getNumPages()>1){?>
+        <script type="text/javascript">
+            function nextPage(nextPageNum){
+                currentPageNum = nextPageNum-1;
+                if(okBrowser()==true){
+                    if(!$("#content_form").validate().form())
+                        return false;
+                }
+                $(".summary").hide();
+                window.scrollTo(0,0);
+                
+                document.getElementById("page_"+currentPageNum).style.display = "none";
+                document.getElementById("page_"+nextPageNum).style.display = "block";
+                // Si la página a mostrar es la última del cuestionario, hace visible el 
+                // botón para enviar resultados.
+                if(nextPageNum == <?php echo $form->getNumPages()?>){
+                    document.getElementById("send_button").style.display = "block";
+                }
+            }
+            
+        </script>
+        <?php }?>
+        
+        <script type="text/javascript">
+            if(okBrowser()==true){
+                $(document).ready(function(){
+                    $("#content_form").validate({
+                        errorPlacement: function(error, element) {
+                           $(".summary").show();
+                            $(".summary").html("<?php echo $form->getValidationErrorsTxt()?>");
+                        }
+                    })});
+            }
+        </script>
+
+    </head>
+    <body>
+	<div class="logo" align="left"><a href="http://inside.nokiasiemensnetworks.com" title="Cosmos is a web based  Applicant tracking system"><img class="logo" border="0"  alt="COSMOS is a customised candidates tracking system created for MBB PaCo Athens by Emmanouil Maragkos" src="images/banner.png"/></a></div>
+        <div class="form-title">
+            <h1><?php echo $form->getTitle()?></h1>
+        </div>
+        <form name="form" id="content_form" action="save.php" method="POST">
+
+            <?php if($form->getIntro()){?>
+            <!-- Introducción -->
+            <div id="form-introduction">
+                <?php include "form_intro.html";?>
+            </div>
+            <!-- /Introducción -->
+            <?php } ?>
+
+            <div id="itemsGroups" <?php if ($form->getIntro()){?>style="display:none"<?php } ?>>
+
+                 <?php $pageNum = 1;?>
+                 <!-- Primera página -->
+                 <div id="page_<?php echo $pageNum?>">
+
+                    <?php foreach ($form->getItemsGroups() as $itemsGroupId=>$itemsGroup){?>
+
+                    <?php if($itemsGroup->getNewPage()){?>
+                    <?php $pageNum++;?>
+                    <!-- Botón pasar página -->
+                    <div class="summary"></div>
+                    <div class="button">
+                        <input type="button" onclick="nextPage(<?php echo $pageNum?>)" class="submit" value="<?php echo $form->getNextPageTxt()?>">
+                    </div>
+                    <!-- Cierra la capa de la página anterior y crea una nueva capa de página-->
+                </div>
+                <div id="page_<?php echo $pageNum?>" style="display:none">
+                    <?php }?>
+
+                    <!-- Incluye plantilla de conjuntos -->
+                    <?php include "itemsGroup.html"?>
+
+
+
+                    <?php }?>
+
+                    <!-- Botón para enviar los resultados -->
+                    <div class="button" id="send_button" <?php if($form->getNumPages()>1){?>style="display:none"<?php }?>>
+                         <input type="submit" class="submit" value="<?php echo $form->getSendTxt()?>">
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- El id del cuestionario -->
+            <input type="hidden" name="form_name" value="<?php echo $form->getId()?>">
+            <input type="hidden" name="time_start" value="<?php echo UserInfo::getRequestTime()?>">
+            <input type="hidden" name="session_id" value="<?php echo session_id()?>">    
+        </form>
+
+    </body>
+</html>
+
+

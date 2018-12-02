@@ -1,0 +1,12 @@
+<table class="tipo-respuesta-adjunto-abierta">
+    <tr>
+        <td>
+            <?php echo $item->getItemAdjunto()->getTextoPregunta()?>
+        </td>
+        <td>
+            <input type='text'
+                   name="<?php echo $itemsGroup->getFullItemId($item->getItemAdjunto())?>[]"
+                   <?php if($item->getItemAdjunto()->isRequired()){?> required="required"<?php }?>>  
+        </td>
+    </tr>
+</table>

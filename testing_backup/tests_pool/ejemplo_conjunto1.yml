@@ -1,0 +1,7 @@
+conjunto1: 
+	titulo: "Título del conjunto de ítems" 
+	descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+	items: 
+		item1: 
+			texto: "Título del ítem" 
+			formato: abierta

@@ -1,0 +1,86 @@
+body{
+    font-size: 12.5px;
+    line-height: 1.5em;
+    font-family: "Arial";
+}
+
+h1{
+    letter-spacing: 0.05em;
+}
+
+h2{
+    
+}
+
+.form-description{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1.1em;
+}
+
+#itemsGroups{
+}
+
+
+.itemsGroup{
+    border-collapse: collapse;
+    padding-bottom:3em;
+    display: block !important;
+}
+
+.itemsGroup table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+.itemsGroup .description{
+    padding-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+.itemsGroup table td{
+    padding: 0.5em;
+}
+
+.itemsGroup table thead{
+    border-bottom: 2px solid black;
+}
+
+.etiquetas-values th{
+    width: 0.5em;
+    padding-bottom: 1.2em;
+}
+
+.etiquetas-ids td{
+    padding-top: 0px !important;
+    font-weight: bold;
+}
+
+.items td{
+    border: 1px solid #ccc;
+}
+
+.items .item-pregunta{
+    padding-right: 1em;
+    width: 20em;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.items label{
+    font-weight: bold;
+    display: block;
+}
+
+.items input[type=text]{
+    display: none;
+}
+
+#itemsGroups input[type=submit]{
+    display: none;
+}
+
+#itemsGroups input[type=radio]{
+    display: none;
+}

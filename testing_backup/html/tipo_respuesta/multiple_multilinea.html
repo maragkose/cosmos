@@ -1,0 +1,34 @@
+<table class="tipo-respuesta-multiple-multilinea">
+    <tr>
+        <td class="item-pregunta">
+            <span class='num'><?php echo $itemNum.". ";?></span><?php echo $item->getTextoPregunta();?>
+        </td>
+    </tr>
+    <?php foreach($item->getOpcionesRespuesta() as $respuestaId=>$respuesta){?>
+    <tr>
+        <td>
+            <table class="respuestas">
+                <tr>
+                    <td class="principal">
+                        <input type='checkbox' 
+                               name="<?php echo $itemsGroup->getFullItemId($item)?>[]" 
+                               value=<?php echo $respuestaId?>>  
+                        <label>
+                            <?php echo $respuesta?>
+                        </label>
+                    </td>
+                    <!-- Ítem adjunto -->
+                    <?php if($item->getItemAdjunto()){?>
+                    <td class="adjunto">
+                        <?php include("html/tipo_respuesta/".Item::ID_ADJUNTO."_".$item->getItemAdjunto()->getTipoRespuesta().".html")?>
+                    </td>
+                    <?php }?>
+
+                    <!--/Ítem adjunto-->
+                </tr>
+            </table>
+        </td>
+
+    </tr>
+    <?php }?>
+</table>

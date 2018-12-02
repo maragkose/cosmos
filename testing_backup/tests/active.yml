@@ -1,0 +1,55 @@
+#### Cuestionario ####
+quiz:
+    title: "set_A" 
+    description: "Welcome in the technical test round of the Assessment Session."
+    thanks: "Thank u"
+    intro: s
+
+personal_data:
+    title: "Enter your Name, Surname and ID"
+    items:
+        Name: 
+            formato:abierta
+            texto:"Name"
+        Surname: 
+            formato:abierta
+            texto:"Surname"
+        ID: 
+            formato:abierta
+            texto:"ID"
+set1: 
+  title: "C Section" 
+  description: "Please select one correct answer." 
+  items: 
+    item1:
+      texto: "What will be output if you will compile and execute the following c code? <br />#include&ltestdio.h&gte"
+      formato: unica
+      respuestas:
+        - a) 10 10 10 
+        - b) afdfafd 
+        - c) afdfafd 
+        - d) afdfafd 
+set2: 
+  title: "Linux/Scripting Section" 
+  description: "Please select one correct answer." 
+  items: 
+    item1:
+      texto: "Question....."
+      formato: unica
+      respuestas:
+        - a) 10 10 10 
+        - b) afdfafd 
+        - c) afdfafd 
+        - d) afdfafd 
+set3: 
+  title: "Networking Section" 
+  description: "Please select one correct answer." 
+  items: 
+    item1:
+      texto: "Question....."
+      formato: unica
+      respuestas:
+        - a) afdfafd 
+        - b) afdfafd 
+        - c) afdfafd 
+        - d) afdfafd 

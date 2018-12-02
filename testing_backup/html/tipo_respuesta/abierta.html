@@ -1,0 +1,19 @@
+<table class="tipo-respuesta-abierta">
+    <tr>
+        <td class="item-pregunta">
+            <span class='num'><?php echo $itemNum.". ";?></span><?php echo $item->getTextoPregunta();?>
+        </td>
+        <td>
+            <input type='text' name="<?php echo $itemsGroup->getFullItemId($item)?>"
+                   <?php if($item->isRequired()){?> required="required"<?php }?>>  
+        </td>
+        <!-- Ítem adjunto -->
+        <?php if($item->getItemAdjunto()){?>
+        <td class="adjunto">
+            <?php include("html/tipo_respuesta/".Item::ID_ADJUNTO."_".$item->getItemAdjunto()->getTipoRespuesta().".html")?>
+        </td>
+        <?php }?>
+
+        <!--/Ítem adjunto-->
+    </tr>
+</table>

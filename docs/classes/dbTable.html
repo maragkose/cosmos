@@ -1,0 +1,438 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \dbTable</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Etiquetas.html"><i class="icon-folder-open"></i> Etiquetas</a></li>
+<li><a href="../packages/Form.html"><i class="icon-folder-open"></i> Form</a></li>
+<li><a href="../packages/Item.html"><i class="icon-folder-open"></i> Item</a></li>
+<li><a href="../packages/ItemsGroup.html"><i class="icon-folder-open"></i> ItemsGroup</a></li>
+<li><a href="../packages/Respuestas.html"><i class="icon-folder-open"></i> Respuestas</a></li>
+<li><a href="../packages/Spyc.html"><i class="icon-folder-open"></i> Spyc</a></li>
+<li><a href="../packages/config.html"><i class="icon-folder-open"></i> config</a></li>
+<li><a href="../packages/utils.html"><i class="icon-folder-open"></i> utils</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">314</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___get" title="__get :: Devuelve el campo que su nombre coincida con el recibido como parámetro."><span class="description">Devuelve el campo que su nombre coincida con el recibido como parámetro.</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete :: Elimina el registro de la tabla que coincida con el identificador contenido
+en el array $rowData."><span class="description">Elimina el registro de la tabla que coincida con el identificador contenido
+en el array $rowData.</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_get" title="get :: Carga una nueva tabla de la base de datos y la guarda en una variable interna,
+o recupera una ya cargada."><span class="description">Carga una nueva tabla de la base de datos y la guarda en una variable interna,
+o recupera una ya cargada.</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getFieldNames" title="getFieldNames :: Devuelve un array con los nombres de los campos que forman la tabla."><span class="description">Devuelve un array con los nombres de los campos que forman la tabla.</span><pre>getFieldNames()</pre></a></li>
+<li class="method public "><a href="#method_getFields" title="getFields :: Devuelve el array de campos."><span class="description">Devuelve el array de campos.</span><pre>getFields()</pre></a></li>
+<li class="method public "><a href="#method_getId" title="getId :: Devuelve el campo identificador de la tabla."><span class="description">Devuelve el campo identificador de la tabla.</span><pre>getId()</pre></a></li>
+<li class="method public "><a href="#method_getTableName" title="getTableName :: "><span class="description">getTableName()
+        </span><pre>getTableName()</pre></a></li>
+<li class="method public "><a href="#method_insert" title="insert :: Añade un nuevo registro en la tabla."><span class="description">Añade un nuevo registro en la tabla.</span><pre>insert()</pre></a></li>
+<li class="method public "><a href="#method_isNew" title="isNew :: "><span class="description">isNew()
+        </span><pre>isNew()</pre></a></li>
+<li class="method public "><a href="#method_save" title="save :: Crea una tabla nueva con los campos que se han especificado, o modifica
+ los campos de una tabla existente."><span class="description">Crea una tabla nueva con los campos que se han especificado, o modifica
+ los campos de una tabla existente.</span><pre>save()</pre></a></li>
+<li class="method public "><a href="#method_selectAll" title="selectAll :: Devuelve el conjunto de registros de la tabla que cumpla con las condiciones
+recibidas como parámetro."><span class="description">Devuelve el conjunto de registros de la tabla que cumpla con las condiciones
+recibidas como parámetro.</span><pre>selectAll()</pre></a></li>
+<li class="method public "><a href="#method_selectOne" title="selectOne :: Devuelve el registro de la tabla que coincida con el identificador recibido
+como parámetro."><span class="description">Devuelve el registro de la tabla que coincida con el identificador recibido
+como parámetro.</span><pre>selectOne()</pre></a></li>
+<li class="method public "><a href="#method_unsetTable" title="unsetTable :: Elimina el objeto de tabla cargado en la variable $loadedTables"><span class="description">Elimina el objeto de tabla cargado en la variable $loadedTables</span><pre>unsetTable()</pre></a></li>
+<li class="method public "><a href="#method_update" title="update :: Actualiza los registros de la tabla con la información recibida."><span class="description">Actualiza los registros de la tabla con la información recibida.</span><pre>update()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method___construct" title="__construct :: Crea un nuevo objeto dbTable."><span class="description">Crea un nuevo objeto dbTable.</span><pre>__construct()</pre></a></li>
+<li class="method private "><a href="#method_mapFields" title="mapFields :: Recupera los campos de la tabla y los asigna al array de campos del
+ objeto."><span class="description">Recupera los campos de la tabla y los asigna al array de campos del
+ objeto.</span><pre>mapFields()</pre></a></li>
+<li class="method private "><a href="#method_setId" title="setId :: Establece el campo identificador de la tabla."><span class="description">Establece el campo identificador de la tabla.</span><pre>setId()</pre></a></li>
+<li class="method private "><a href="#method_setTableName" title="setTableName :: "><span class="description">setTableName()
+        </span><pre>setTableName()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public "><a href="#property_loadedTables" title="$loadedTables :: Array de objetos dbTable."><span class="description"></span><pre>$loadedTables</pre></a></li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_fields" title="$fields :: Campos de la tabla."><span class="description"></span><pre>$fields</pre></a></li>
+<li class="property protected "><a href="#property_id" title="$id :: El campo identificador de la tabla."><span class="description"></span><pre>$id</pre></a></li>
+<li class="property protected "><a href="#property_tableName" title="$tableName :: "><span class="description"></span><pre>$tableName</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_newTable" title="$newTable :: La tabla no existe en la base de datos."><span class="description"></span><pre>$newTable</pre></a></li>
+<li class="property private "><a href="#property_rowSet" title="$rowSet :: Conjunto de registros devuelto por la última consulta."><span class="description"></span><pre>$rowSet</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_SQL_NULL_FIELD" title="SQL_NULL_FIELD :: "><span class="description">SQL_NULL_FIELD</span><pre>SQL_NULL_FIELD</pre></a></li>
+<li class="constant  "><a href="#constant_SQL_PRIMARY_KEY" title="SQL_PRIMARY_KEY :: Identificador de clave primaria en MySQL."><span class="description">Identificador de clave primaria en MySQL.</span><pre>SQL_PRIMARY_KEY</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\dbTable"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/dbTable.html">dbTable</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Devuelve el campo que su nombre coincida con el recibido como parámetro.</h2>
+<pre>__get(string $fieldName) : <a href="../classes/field.html">\field</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Si no encuentra ningún campo con ese nombre, creará un nuevo campo en
+el conjunto y devolverá el objeto creado.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/field.html">\field</a></code></div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Elimina el registro de la tabla que coincida con el identificador contenido
+en el array $rowData.</h2>
+<pre>delete(array $rowData) : \type</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rowData</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\type</code></div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse">
+<h2>Carga una nueva tabla de la base de datos y la guarda en una variable interna,
+o recupera una ya cargada.</h2>
+<pre>get(string $tableName) : \self</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tableName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\self</code></div>
+</div></div>
+</div>
+<a id="method_getFieldNames"></a><div class="element clickable method public method_getFieldNames" data-toggle="collapse" data-target=".method_getFieldNames .collapse">
+<h2>Devuelve un array con los nombres de los campos que forman la tabla.</h2>
+<pre>getFieldNames() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Alias de $this->getFields()->getFieldNames()</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getFields"></a><div class="element clickable method public method_getFields" data-toggle="collapse" data-target=".method_getFields .collapse">
+<h2>Devuelve el array de campos.</h2>
+<pre>getFields(string $fieldName) : <a href="../classes/fieldSet.html">\fieldSet</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Si recibe el nombre de un campo existente
+en la tabla, devuelve su objeto field.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fieldName</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/dbTableException.html">\dbTableException</a></code></th>
+<td>El campo no existe en la tabla.</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/fieldSet.html">\fieldSet</a></code>| \field</div>
+</div></div>
+</div>
+<a id="method_getId"></a><div class="element clickable method public method_getId" data-toggle="collapse" data-target=".method_getId .collapse">
+<h2>Devuelve el campo identificador de la tabla.</h2>
+<pre>getId() : <a href="../classes/field.html">\field</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/field.html">\field</a></code></div>
+</div></div>
+</div>
+<a id="method_getTableName"></a><div class="element clickable method public method_getTableName" data-toggle="collapse" data-target=".method_getTableName .collapse">
+<h2>getTableName()
+        </h2>
+<pre>getTableName() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_insert"></a><div class="element clickable method public method_insert" data-toggle="collapse" data-target=".method_insert .collapse">
+<h2>Añade un nuevo registro en la tabla.</h2>
+<pre>insert(array $rowData) : \type</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rowData</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\type</code></div>
+</div></div>
+</div>
+<a id="method_isNew"></a><div class="element clickable method public method_isNew" data-toggle="collapse" data-target=".method_isNew .collapse">
+<h2>isNew()
+        </h2>
+<pre>isNew() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
+<h2>Crea una tabla nueva con los campos que se han especificado, o modifica
+ los campos de una tabla existente.</h2>
+<pre>save() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_selectAll"></a><div class="element clickable method public method_selectAll" data-toggle="collapse" data-target=".method_selectAll .collapse">
+<h2>Devuelve el conjunto de registros de la tabla que cumpla con las condiciones
+recibidas como parámetro.</h2>
+<pre>selectAll(array $conditions) : <a href="../classes/rowSet.html">\rowSet</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$conditions</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/rowSet.html">\rowSet</a></code>| \tableRow</div>
+</div></div>
+</div>
+<a id="method_selectOne"></a><div class="element clickable method public method_selectOne" data-toggle="collapse" data-target=".method_selectOne .collapse">
+<h2>Devuelve el registro de la tabla que coincida con el identificador recibido
+como parámetro.</h2>
+<pre>selectOne(\type $id) : <a href="../classes/tableRow.html">\tableRow</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>\type</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/tableRow.html">\tableRow</a></code></div>
+</div></div>
+</div>
+<a id="method_unsetTable"></a><div class="element clickable method public method_unsetTable" data-toggle="collapse" data-target=".method_unsetTable .collapse">
+<h2>Elimina el objeto de tabla cargado en la variable $loadedTables</h2>
+<pre>unsetTable() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_update"></a><div class="element clickable method public method_update" data-toggle="collapse" data-target=".method_update .collapse">
+<h2>Actualiza los registros de la tabla con la información recibida.</h2>
+<pre>update(array $rowData) : \type</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rowData</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\type</code></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method private method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Crea un nuevo objeto dbTable.</h2>
+<pre>__construct(string $tableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Si recibe un nombre de tabla existente, cargará todos
+sus campos en el objeto de conjunto de campos $fields. Si el nombre de
+la tabla no coincide con ninguna tabla existente, creará un objeto de
+conjunto de campos vacío para la proceder a la creación de nueva tabla.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tableName</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_mapFields"></a><div class="element clickable method private method_mapFields" data-toggle="collapse" data-target=".method_mapFields .collapse">
+<h2>Recupera los campos de la tabla y los asigna al array de campos del
+ objeto.</h2>
+<pre>mapFields() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setId"></a><div class="element clickable method private method_setId" data-toggle="collapse" data-target=".method_setId .collapse">
+<h2>Establece el campo identificador de la tabla.</h2>
+<pre>setId(\field $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code><a href="../classes/field.html">\field</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_setTableName"></a><div class="element clickable method private method_setTableName" data-toggle="collapse" data-target=".method_setTableName .collapse">
+<h2>setTableName()
+        </h2>
+<pre>setTableName($tableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$tableName</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_loadedTables"> </a><div class="element clickable property public property_loadedTables" data-toggle="collapse" data-target=".property_loadedTables .collapse">
+<h2></h2>
+<pre>$loadedTables : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Tras mapear una tabla, ésta se guarda en el
+array y puede ser recuperada posteriormente sin necesidad de crear un
+nuevo objeto.</p></div></div></div>
+</div>
+<a id="property_fields"> </a><div class="element clickable property protected property_fields" data-toggle="collapse" data-target=".property_fields .collapse">
+<h2></h2>
+<pre>$fields : <a href="../classes/fieldSet.html">\fieldSet</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_id"> </a><div class="element clickable property protected property_id" data-toggle="collapse" data-target=".property_id .collapse">
+<h2></h2>
+<pre>$id : <a href="../classes/field.html">\field</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tableName"> </a><div class="element clickable property protected property_tableName" data-toggle="collapse" data-target=".property_tableName .collapse">
+<h2></h2>
+<pre>$tableName </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_newTable"> </a><div class="element clickable property private property_newTable" data-toggle="collapse" data-target=".property_newTable .collapse">
+<h2></h2>
+<pre>$newTable : \booean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Se utiliza en el modo de creación
+de tablas.</p></div></div></div>
+</div>
+<a id="property_rowSet"> </a><div class="element clickable property private property_rowSet" data-toggle="collapse" data-target=".property_rowSet .collapse">
+<h2></h2>
+<pre>$rowSet : <a href="../classes/rowSet.html">\rowSet</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_SQL_NULL_FIELD"> </a><div class="element clickable constant  constant_SQL_NULL_FIELD" data-toggle="collapse" data-target=".constant_SQL_NULL_FIELD .collapse">
+<h2>SQL_NULL_FIELD</h2>
+<pre>SQL_NULL_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SQL_PRIMARY_KEY"> </a><div class="element clickable constant  constant_SQL_PRIMARY_KEY" data-toggle="collapse" data-target=".constant_SQL_PRIMARY_KEY .collapse">
+<h2>Identificador de clave primaria en MySQL.</h2>
+<pre>SQL_PRIMARY_KEY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-02-05T00:18:27+01:00.<br></footer></div>
+</div>
+</body>
+</html>

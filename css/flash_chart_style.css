@@ -1,0 +1,73 @@
+/* you need this class no matter what for default chart style */
+.flash_chart_setup{
+	width:600px;
+	height:300px;
+	/* graph background colour */
+	background-color:#ffffff;
+	/*y grid */
+	border-top-color:#E2E2E2;
+	/*y axis*/
+	border-left-color:#428BC7;
+	/*x axis*/
+	border-right-color:#EE1C2F;
+	/*x grid */
+	border-bottom-color:#E2E2E2;
+	background-image:url('show_flash_chart');
+}
+/* add flash chart to the beginning of the table id to override the .flash_chart_setup for that chart */
+#flash_chart_sometotals2.flash_chart_setup{
+	width:400px;
+	height:300px;
+	/* graph background colour */
+	background-color:#ffffff;
+	/*y grid */
+	border-top-color:#E2E2E2;
+	/*y axis*/
+	border-left-color:#000033;
+	/*x axis*/
+	border-right-color:#EE1C2F;
+	/*x grid */
+	border-bottom-color:#E2E2E2;
+}
+/*generic icon style for the links */
+/*this is the container div */
+.show_hide_container{
+	border-top:3px solid #000033;
+	width:100%;
+	height:20px;
+	background-color:#E2E2E2;
+	text-align:right;
+	padding-top:6px;
+}
+
+a:link {
+	color: #000033;
+	text-decoration:none;
+	border-bottom:0px solid #DE1111;
+}
+a:visited {
+	color: #000033;
+	text-decoration:none; 
+	border-bottom:0px solid #FFC001;
+}
+
+a:hover {
+	color: white;
+	text-decoration:none; 
+	border-bottom:0px solid #EE192C;
+	background-color:#000033;
+}
+
+.icon_link{
+	background: url(images/link.gif) top left no-repeat;
+	padding:0px 0px 6px 20px;
+	border-bottom:0px solid #000033;
+	margin-right:10px;
+}
+/* this is the style of the chart show link */
+.flash_chart_link{
+	background: url(images/graph.gif) top left no-repeat;
+}
+.html_table_link{
+	background: url(images/table.gif) top left no-repeat;
+}

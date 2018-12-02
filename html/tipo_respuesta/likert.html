@@ -1,0 +1,11 @@
+<td class="item-pregunta-likert <?php if($itemNum%2==0){?>alter<?php }?>">
+    <span class='num'><?php echo $itemNum.". ";?></span><?php echo $item->getTextoPregunta();?>
+</td>
+<?php foreach($itemsGroup->etiquetas->getIds() as $etiquetaId){?>
+<td class="respuesta-likert <?php if($itemNum%2==0){?>alter<?php }?>">
+    <input type="radio" 
+           name="<?php echo $itemsGroup->getFullItemId($item)?>" 
+           value="<?php echo $etiquetaId?>"
+           <?php if($item->isRequired()){?> required="required"<?php }?>>
+</td>
+<?php }?>

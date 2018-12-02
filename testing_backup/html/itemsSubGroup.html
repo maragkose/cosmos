@@ -1,0 +1,75 @@
+<!-- subconjunto de ítems -->
+<div class="itemsSubGroup">
+    <!-- Título de cada subgrupo de ítems -->
+    <div class="title">
+        <?php echo ($itemsGroupId).".".($itemsSubGroupId).". {$itemsSubGroup->getTitle()}";?>
+    </div>
+    
+    <?php if($itemsGroup->getDescription()){?>
+     <!-- Descripción del conjunto -->
+     <div class="description">
+        <?php echo $itemsSubGroup->getDescription()?>
+    </div>
+     <?php }?>
+     
+    <?php if($itemsSubGroup->getImage()){?>
+    <!-- Imagen del conjunto -->
+    <div class="image">
+        <img src="<?php echo IMAGE_DIR.DIRECTORY_SEPARATOR.$itemsSubGroup->getImage()?>" alt="<?php echo $itemsSubGroup->getTitle()?>">
+    </div>
+    <?php }?>
+     
+    <div class="items">
+        <table>
+            <!-- Etiquetas -->
+            <?php if($itemsSubGroup->etiquetas){?>
+            <thead>
+                <!-- etiquetasValues -->
+                <tr class="etiquetas-values">
+                    <th></th>
+                    <?php foreach ($itemsSubGroup->etiquetas->getValues() as $etiquetaValue){?>
+                    <th >
+                        <?php echo $etiquetaValue?>
+                    </th>
+                    <?php }?>
+                </tr>
+                <!-- /etiquetasValues -->
+
+                <!-- Para etiquetas con valores mínimo y máximo 
+                     especificados, además se muestra una fila de ids. 
+                -->
+                <?php if($itemsSubGroup->etiquetas->getEtiquetaMinLabel()){?>
+                <tr class="etiquetas-ids">
+                    <td></td>
+                    <?php foreach ($itemsSubGroup->etiquetas->getIds() as $etiquetaId){?>
+                    <td >
+                        <?php echo $etiquetaId?>
+                    </td>
+                    <?php }?>
+                </tr>
+                <?php }?>
+                <!-- /etiquetasIds -->
+            </thead>
+            <?php }?>
+            <!-- /Etiquetas -->
+
+            <tbody class="items">
+                <!-- items -->
+                <?php  foreach ($itemsSubGroup->getItems() as $itemNum=>$item) {?>
+                <tr>
+                    <!-- Opciones de respuesta -->
+                    <td class="item">
+                    <?php include("html/tipo_respuesta/".$item->getTipoRespuesta().".html")?>
+                    </td>
+                    <!-- /Opciones de respuesta -->
+
+                </tr>
+                <?php }?>
+                <!-- /items -->
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+<!--/subconjunto de ítems-->

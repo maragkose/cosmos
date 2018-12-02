@@ -1,0 +1,12 @@
+conjunto1: 
+  titulo: "Título del conjunto de ítems" 
+  descripcion: "Descripción del conjunto de ítems. Se muestra bajo el título" 
+  etiquetas: 
+    - "Nunca" 
+    - "A veces" 
+    - "Frecuentemente" 
+    - "Siempre" 
+  items: 
+    item1: 
+      texto: "Elige una opción" 
+      formato: likert 

@@ -1,0 +1,55 @@
+/* this css is just to make the page look a bit nicer and isn't needed*/
+@media screen {
+/*html */
+body{
+	font: normal 0.7em Arial;
+	/* line-height: 13px;*/
+	color: #000033;
+	margin-left: auto; margin-right: auto;
+	/* added */
+	margin-top:0px;
+	width:800px; 
+	text-align: justify;
+	position:relative;
+	left:0px;
+	top:0px;
+	border:1px solid #E2E2E2;
+}
+table{
+	font: normal 1em Arial;
+	color: #2B0F00;
+	width:100%;
+	border:1px solid #CCCCCC;
+	margin-bottom:10px;
+}
+table:hover{
+	border:1px solid #FEEBBF;
+}
+
+caption{
+	margin:0px;
+	padding:0px;
+	border:1px solid #CCCCCC;
+	font-weight:bold;
+}
+th, td{
+	vertical-align: top; 
+	height:auto;
+	border-top:1px solid #D2D2D2;
+	text-align:center;	
+}
+th{
+	background-color:#000033;
+	color:white;
+}
+tfoot tr{
+	background-color:#FEEBBF;
+}
+td{
+	text-align:left;
+}
+tr{
+	height:auto;
+}
+/*end html*/
+}

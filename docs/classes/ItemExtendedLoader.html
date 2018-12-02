@@ -1,0 +1,949 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \ItemExtendedLoader</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Etiquetas.html"><i class="icon-folder-open"></i> Etiquetas</a></li>
+<li><a href="../packages/Form.html"><i class="icon-folder-open"></i> Form</a></li>
+<li><a href="../packages/Item.html"><i class="icon-folder-open"></i> Item</a></li>
+<li><a href="../packages/ItemsGroup.html"><i class="icon-folder-open"></i> ItemsGroup</a></li>
+<li><a href="../packages/Respuestas.html"><i class="icon-folder-open"></i> Respuestas</a></li>
+<li><a href="../packages/Spyc.html"><i class="icon-folder-open"></i> Spyc</a></li>
+<li><a href="../packages/config.html"><i class="icon-folder-open"></i> config</a></li>
+<li><a href="../packages/utils.html"><i class="icon-folder-open"></i> utils</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">314</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Hereda el constructor de ItemLoader e incorpora la asigación
+de opciones de respuesta."><span class="description">Hereda el constructor de ItemLoader e incorpora la asigación
+de opciones de respuesta.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method_getHash" title="getHash :: Identificador único del ítem."><span class="description">Identificador único del ítem.</span><pre>getHash()</pre></a></li>
+<li class="method public inherited"><a href="#method_getId" title="getId :: "><span class="description">getId()
+        </span><pre>getId()</pre></a></li>
+<li class="method public inherited"><a href="#method_getInstance" title="getInstance :: Según la información contenida en $itemData, crea un objeto
+item estándard, uno con propiedades adicionales (p."><span class="description">Según la información contenida en $itemData, crea un objeto
+item estándard, uno con propiedades adicionales (p.</span><pre>getInstance()</pre></a></li>
+<li class="method public inherited"><a href="#method_getItemAdjunto" title="getItemAdjunto :: "><span class="description">getItemAdjunto()
+        </span><pre>getItemAdjunto()</pre></a></li>
+<li class="method public inherited"><a href="#method_getItemData" title="getItemData :: "><span class="description">getItemData()
+        </span><pre>getItemData()</pre></a></li>
+<li class="method public inherited"><a href="#method_getOpcionesRespuesta" title="getOpcionesRespuesta :: "><span class="description">getOpcionesRespuesta()
+        </span><pre>getOpcionesRespuesta()</pre></a></li>
+<li class="method public inherited"><a href="#method_getSeed" title="getSeed :: "><span class="description">getSeed()
+        </span><pre>getSeed()</pre></a></li>
+<li class="method public inherited"><a href="#method_getTextoPregunta" title="getTextoPregunta :: "><span class="description">getTextoPregunta()
+        </span><pre>getTextoPregunta()</pre></a></li>
+<li class="method public inherited"><a href="#method_getTipoRespuesta" title="getTipoRespuesta :: "><span class="description">getTipoRespuesta()
+        </span><pre>getTipoRespuesta()</pre></a></li>
+<li class="method public inherited"><a href="#method_hasItemsSubGroup" title="hasItemsSubGroup :: Comprueba si el ítem posee un subconjunto de ítems."><span class="description">Comprueba si el ítem posee un subconjunto de ítems.</span><pre>hasItemsSubGroup()</pre></a></li>
+<li class="method public inherited"><a href="#method_isRequired" title="isRequired :: Comprueba si el ítem es de respuesta obligatoria."><span class="description">Comprueba si el ítem es de respuesta obligatoria.</span><pre>isRequired()</pre></a></li>
+<li class="method public inherited"><a href="#method_setId" title="setId :: "><span class="description">setId()
+        </span><pre>setId()</pre></a></li>
+<li class="method public "><a href="#method_setItemAdjunto" title="setItemAdjunto :: Busca el campo ADJUNTO_FIELD y asigna un ítem adjunto."><span class="description">Busca el campo ADJUNTO_FIELD y asigna un ítem adjunto.</span><pre>setItemAdjunto()</pre></a></li>
+<li class="method public inherited"><a href="#method_setItemData" title="setItemData :: "><span class="description">setItemData()
+        </span><pre>setItemData()</pre></a></li>
+<li class="method public "><a href="#method_setOpcionesRespuesta" title="setOpcionesRespuesta :: Busca el campo OPCIONES_RESPUESTA_FIELD y asigna las opciones de respuesta
+a un ítem."><span class="description">Busca el campo OPCIONES_RESPUESTA_FIELD y asigna las opciones de respuesta
+a un ítem.</span><pre>setOpcionesRespuesta()</pre></a></li>
+<li class="method public "><a href="#method_setRequired" title="setRequired :: Comprueba si el ítem es de respuesta obligatoria."><span class="description">Comprueba si el ítem es de respuesta obligatoria.</span><pre>setRequired()</pre></a></li>
+<li class="method public inherited"><a href="#method_setSeed" title="setSeed :: "><span class="description">setSeed()
+        </span><pre>setSeed()</pre></a></li>
+<li class="method public "><a href="#method_setTextoPregunta" title="setTextoPregunta :: Busca el campo PREGUNTA_FIELD en el array y lo asigna
+a $textoPregunta."><span class="description">Busca el campo PREGUNTA_FIELD en el array y lo asigna
+a $textoPregunta.</span><pre>setTextoPregunta()</pre></a></li>
+<li class="method public "><a href="#method_setTipoRespuesta" title="setTipoRespuesta :: Busca el campo TIPO_RESPUESTA_FIELD en el array y lo asigna
+a $tipoRespuesta."><span class="description">Busca el campo TIPO_RESPUESTA_FIELD en el array y lo asigna
+a $tipoRespuesta.</span><pre>setTipoRespuesta()</pre></a></li>
+<li class="method public inherited"><a href="#method_textoToId" title="textoToId :: Adapta una cadena de texto para poder ser utilizada como identificador."><span class="description">Adapta una cadena de texto para poder ser utilizada como identificador.</span><pre>textoToId()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public inherited"><a href="#property_opcionesRespuesta" title="$opcionesRespuesta :: Esta variable contiene opciones de respuesta del ítem."><span class="description"></span><pre>$opcionesRespuesta</pre></a></li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property_id" title="$id :: El identificador del ítem dentro del grupo."><span class="description"></span><pre>$id</pre></a></li>
+<li class="property protected inherited"><a href="#property_itemAdjunto" title="$itemAdjunto :: Ítem que proporciona información adicional a la respuesta del ítem
+principal."><span class="description"></span><pre>$itemAdjunto</pre></a></li>
+<li class="property protected inherited"><a href="#property_itemData" title="$itemData :: "><span class="description"></span><pre>$itemData</pre></a></li>
+<li class="property protected inherited"><a href="#property_required" title="$required :: Determina si es obligatorio responder al ítem."><span class="description"></span><pre>$required</pre></a></li>
+<li class="property protected inherited"><a href="#property_seed" title="$seed :: Se utiliza en combinación con otras variables para crear identificadores
+únicos."><span class="description"></span><pre>$seed</pre></a></li>
+<li class="property protected inherited"><a href="#property_textoPregunta" title="$textoPregunta :: "><span class="description"></span><pre>$textoPregunta</pre></a></li>
+<li class="property protected inherited"><a href="#property_tipoRespuesta" title="$tipoRespuesta :: El formato de respuesta del ítem."><span class="description"></span><pre>$tipoRespuesta</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_ADJUNTO_FIELD" title="ADJUNTO_FIELD :: Nombre permitido para el campo de ítem adjunto."><span class="description">Nombre permitido para el campo de ítem adjunto.</span><pre>ADJUNTO_FIELD</pre></a></li>
+<li class="constant  inherited"><a href="#constant_ID_ADJUNTO" title="ID_ADJUNTO :: Identificador del ítem adjunto."><span class="description">Identificador del ítem adjunto.</span><pre>ID_ADJUNTO</pre></a></li>
+<li class="constant  inherited"><a href="#constant_ID_DELIMITER" title="ID_DELIMITER :: Se utiliza para codificar el identificador de los ítems."><span class="description">Se utiliza para codificar el identificador de los ítems.</span><pre>ID_DELIMITER</pre></a></li>
+<li class="constant  "><a href="#constant_IS_REQUIRED_FIELD" title="IS_REQUIRED_FIELD :: Nombre permitido para el campo de respuesta obligatoria."><span class="description">Nombre permitido para el campo de respuesta obligatoria.</span><pre>IS_REQUIRED_FIELD</pre></a></li>
+<li class="constant  "><a href="#constant_OPCIONES_RESPUESTA_FIELD" title="OPCIONES_RESPUESTA_FIELD :: Nombre permitido para el campo de opciones de respuesta."><span class="description">Nombre permitido para el campo de opciones de respuesta.</span><pre>OPCIONES_RESPUESTA_FIELD</pre></a></li>
+<li class="constant  "><a href="#constant_PREGUNTA_FIELD" title="PREGUNTA_FIELD :: En ítems con propiedades adicionales se debe especifiar el campo en
+el que se encuentra la pregunta."><span class="description">En ítems con propiedades adicionales se debe especifiar el campo en
+el que se encuentra la pregunta.</span><pre>PREGUNTA_FIELD</pre></a></li>
+<li class="constant  inherited"><a href="#constant_SUB_ITEMS_FIELD" title="SUB_ITEMS_FIELD :: Nombre permitido para el campo de subconjunto de ítems."><span class="description">Nombre permitido para el campo de subconjunto de ítems.</span><pre>SUB_ITEMS_FIELD</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_ABIERTA" title="TIPO_ABIERTA :: "><span class="description">TIPO_ABIERTA</span><pre>TIPO_ABIERTA</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_ABIERTA_AMPLIA" title="TIPO_ABIERTA_AMPLIA :: "><span class="description">TIPO_ABIERTA_AMPLIA</span><pre>TIPO_ABIERTA_AMPLIA</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_BINARIA" title="TIPO_BINARIA :: "><span class="description">TIPO_BINARIA</span><pre>TIPO_BINARIA</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_LIKERT" title="TIPO_LIKERT :: Formatos de respuesta."><span class="description">Formatos de respuesta.</span><pre>TIPO_LIKERT</pre></a></li>
+<li class="constant  "><a href="#constant_TIPO_RESPUESTA_FIELD" title="TIPO_RESPUESTA_FIELD :: Nombre permitido para el campo de formato de respuesta en el archivo
+de cuestionario."><span class="description">Nombre permitido para el campo de formato de respuesta en el archivo
+de cuestionario.</span><pre>TIPO_RESPUESTA_FIELD</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_SELECCION_MULTIPLE" title="TIPO_SELECCION_MULTIPLE :: "><span class="description">TIPO_SELECCION_MULTIPLE</span><pre>TIPO_SELECCION_MULTIPLE</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_SELECCION_MULTIPLE_MULTILINEA" title="TIPO_SELECCION_MULTIPLE_MULTILINEA :: "><span class="description">TIPO_SELECCION_MULTIPLE_MULTILINEA</span><pre>TIPO_SELECCION_MULTIPLE_MULTILINEA</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_SELECCION_UNICA" title="TIPO_SELECCION_UNICA :: "><span class="description">TIPO_SELECCION_UNICA</span><pre>TIPO_SELECCION_UNICA</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TIPO_SELECCION_UNICA_DESPLEGABLE" title="TIPO_SELECCION_UNICA_DESPLEGABLE :: "><span class="description">TIPO_SELECCION_UNICA_DESPLEGABLE</span><pre>TIPO_SELECCION_UNICA_DESPLEGABLE</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ItemExtendedLoader"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ItemExtendedLoader.html">ItemExtendedLoader</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Recibe información extraida de un archivo de cuestionario y crea un objeto Item
+con propiedades adicionales.</p>
+<div class="details">
+<div class="long_description"><p>Si el ítem es un conjunto, carga el contenido del subconjunto.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Item.html">Item</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="mailto:juanharo@gmail.com">Juan Haro</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://jharo.net/dokuwiki/testmaker">http://jharo.net/dokuwiki/testmaker</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright 2012 Juan Haro</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Hereda el constructor de ItemLoader e incorpora la asigación
+de opciones de respuesta.</h2>
+<pre>__construct(string $itemId, array $itemData, boolean $idFromTexto) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>En un ítem sin propiedades adicionales, $itemData sólo
+contiene el texto del ítem.
+El parámetro $idFromTexto indica si el identificador debe
+ser generado a partir del texto del ítem.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$itemId</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$itemData</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$idFromTexto</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<a id="method_getHash"></a><div class="element clickable method public method_getHash" data-toggle="collapse" data-target=".method_getHash .collapse">
+<h2>Identificador único del ítem.</h2>
+<pre>getHash() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Utilizado para realizar búsquedas desde
+el conjunto de ítems. Si el ítem pertenece a un subconjunto, se utiliza
+una variable adicional para generarlo ($seed).</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::getHash()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getHash()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getId"></a><div class="element clickable method public method_getId" data-toggle="collapse" data-target=".method_getId .collapse">
+<h2>getId()
+        </h2>
+<pre>getId() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::getId()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getId()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getInstance"></a><div class="element clickable method public method_getInstance" data-toggle="collapse" data-target=".method_getInstance .collapse">
+<h2>Según la información contenida en $itemData, crea un objeto
+item estándard, uno con propiedades adicionales (p.</h2>
+<pre>getInstance(\type $itemId, array | string $itemData, boolean $idFromTexto) : <a href="../classes/ItemExtendedLoader.html">\ItemExtendedLoader</a> | <a href="../classes/ItemsSubGroupLoader.html">\ItemsSubGroupLoader</a> | \self</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>ej., tipo de
+respuesta) o un subconjunto de ítems.
+El parámetro $idFromTexto indica si el identificador debe
+ser generado a partir del texto del ítem.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getInstance()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$itemId</h4>
+<code>\type</code>
+</div>
+<div class="subelement argument">
+<h4>$itemData</h4>
+<code>array</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$idFromTexto</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ItemExtendedLoader.html">\ItemExtendedLoader</a></code><code><a href="../classes/ItemsSubGroupLoader.html">\ItemsSubGroupLoader</a></code><code>\self</code>
+</div>
+</div></div>
+</div>
+<a id="method_getItemAdjunto"></a><div class="element clickable method public method_getItemAdjunto" data-toggle="collapse" data-target=".method_getItemAdjunto .collapse">
+<h2>getItemAdjunto()
+        </h2>
+<pre>getItemAdjunto() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::getItemAdjunto()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getItemAdjunto()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getItemData"></a><div class="element clickable method public method_getItemData" data-toggle="collapse" data-target=".method_getItemData .collapse">
+<h2>getItemData()
+        </h2>
+<pre>getItemData() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getItemData()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getOpcionesRespuesta"></a><div class="element clickable method public method_getOpcionesRespuesta" data-toggle="collapse" data-target=".method_getOpcionesRespuesta .collapse">
+<h2>getOpcionesRespuesta()
+        </h2>
+<pre>getOpcionesRespuesta() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::getOpcionesRespuesta()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getOpcionesRespuesta()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getSeed"></a><div class="element clickable method public method_getSeed" data-toggle="collapse" data-target=".method_getSeed .collapse">
+<h2>getSeed()
+        </h2>
+<pre>getSeed() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::getSeed()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getSeed()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getTextoPregunta"></a><div class="element clickable method public method_getTextoPregunta" data-toggle="collapse" data-target=".method_getTextoPregunta .collapse">
+<h2>getTextoPregunta()
+        </h2>
+<pre>getTextoPregunta() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::getTextoPregunta()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getTextoPregunta()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_getTipoRespuesta"></a><div class="element clickable method public method_getTipoRespuesta" data-toggle="collapse" data-target=".method_getTipoRespuesta .collapse">
+<h2>getTipoRespuesta()
+        </h2>
+<pre>getTipoRespuesta() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::getTipoRespuesta()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::getTipoRespuesta()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_hasItemsSubGroup"></a><div class="element clickable method public method_hasItemsSubGroup" data-toggle="collapse" data-target=".method_hasItemsSubGroup .collapse">
+<h2>Comprueba si el ítem posee un subconjunto de ítems.</h2>
+<pre>hasItemsSubGroup(array $itemData) : boolean</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\ItemLoader::hasItemsSubGroup()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$itemData</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_isRequired"></a><div class="element clickable method public method_isRequired" data-toggle="collapse" data-target=".method_isRequired .collapse">
+<h2>Comprueba si el ítem es de respuesta obligatoria.</h2>
+<pre>isRequired() : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::isRequired()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::isRequired()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_setId"></a><div class="element clickable method public method_setId" data-toggle="collapse" data-target=".method_setId .collapse">
+<h2>setId()
+        </h2>
+<pre>setId($id) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::setId()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::setId()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_setItemAdjunto"></a><div class="element clickable method public method_setItemAdjunto" data-toggle="collapse" data-target=".method_setItemAdjunto .collapse">
+<h2>Busca el campo ADJUNTO_FIELD y asigna un ítem adjunto.</h2>
+<pre>setItemAdjunto() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Su identificador
+es generado a partir de la combinación del identificador del ítem principal
+y una palabra clave que indica que es un ítem adjunto (itemId__adjunto).</p></div></div></div>
+</div>
+<a id="method_setItemData"></a><div class="element clickable method public method_setItemData" data-toggle="collapse" data-target=".method_setItemData .collapse">
+<h2>setItemData()
+        </h2>
+<pre>setItemData($itemData) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\ItemLoader::setItemData()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$itemData</h4></div>
+</div></div>
+</div>
+<a id="method_setOpcionesRespuesta"></a><div class="element clickable method public method_setOpcionesRespuesta" data-toggle="collapse" data-target=".method_setOpcionesRespuesta .collapse">
+<h2>Busca el campo OPCIONES_RESPUESTA_FIELD y asigna las opciones de respuesta
+a un ítem.</h2>
+<pre>setOpcionesRespuesta() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setRequired"></a><div class="element clickable method public method_setRequired" data-toggle="collapse" data-target=".method_setRequired .collapse">
+<h2>Comprueba si el ítem es de respuesta obligatoria.</h2>
+<pre>setRequired() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setSeed"></a><div class="element clickable method public method_setSeed" data-toggle="collapse" data-target=".method_setSeed .collapse">
+<h2>setSeed()
+        </h2>
+<pre>setSeed($seed) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::setSeed()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::setSeed()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$seed</h4></div>
+</div></div>
+</div>
+<a id="method_setTextoPregunta"></a><div class="element clickable method public method_setTextoPregunta" data-toggle="collapse" data-target=".method_setTextoPregunta .collapse">
+<h2>Busca el campo PREGUNTA_FIELD en el array y lo asigna
+a $textoPregunta.</h2>
+<pre>setTextoPregunta() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Las subclases lo implementan de forma particular.</p></div></div></div>
+</div>
+<a id="method_setTipoRespuesta"></a><div class="element clickable method public method_setTipoRespuesta" data-toggle="collapse" data-target=".method_setTipoRespuesta .collapse">
+<h2>Busca el campo TIPO_RESPUESTA_FIELD en el array y lo asigna
+a $tipoRespuesta.</h2>
+<pre>setTipoRespuesta() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_textoToId"></a><div class="element clickable method public method_textoToId" data-toggle="collapse" data-target=".method_textoToId .collapse">
+<h2>Adapta una cadena de texto para poder ser utilizada como identificador.</h2>
+<pre>textoToId(string $texto) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\ItemLoader::textoToId()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$texto</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_opcionesRespuesta"> </a><div class="element clickable property public property_opcionesRespuesta" data-toggle="collapse" data-target=".property_opcionesRespuesta .collapse">
+<h2></h2>
+<pre>$opcionesRespuesta : <a href="../classes/Respuestas.html">\Respuestas</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Para ítems de selección única o múltiple.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::$$opcionesRespuesta</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$opcionesRespuesta</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_id"> </a><div class="element clickable property protected property_id" data-toggle="collapse" data-target=".property_id .collapse">
+<h2></h2>
+<pre>$id </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Se utiliza en combinación
+con los identificadores de conjuntos y subconjuntos, generando un
+identificador único. Ejemplo: idConjunto__idItem,
+idConjunto__idSubConjunto__idItem .</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::$$id</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$id</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_itemAdjunto"> </a><div class="element clickable property protected property_itemAdjunto" data-toggle="collapse" data-target=".property_itemAdjunto .collapse">
+<h2></h2>
+<pre>$itemAdjunto : self</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::$$itemAdjunto</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$itemAdjunto</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_itemData"> </a><div class="element clickable property protected property_itemData" data-toggle="collapse" data-target=".property_itemData .collapse">
+<h2></h2>
+<pre>$itemData </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$itemData</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_required"> </a><div class="element clickable property protected property_required" data-toggle="collapse" data-target=".property_required .collapse">
+<h2></h2>
+<pre>$required : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Por defecto todos los ítems son de respuesta obligatoria.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::$$required</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$required</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_seed"> </a><div class="element clickable property protected property_seed" data-toggle="collapse" data-target=".property_seed .collapse">
+<h2></h2>
+<pre>$seed : \type</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::$$seed</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$seed</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_textoPregunta"> </a><div class="element clickable property protected property_textoPregunta" data-toggle="collapse" data-target=".property_textoPregunta .collapse">
+<h2></h2>
+<pre>$textoPregunta </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::$$textoPregunta</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$textoPregunta</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_tipoRespuesta"> </a><div class="element clickable property protected property_tipoRespuesta" data-toggle="collapse" data-target=".property_tipoRespuesta .collapse">
+<h2></h2>
+<pre>$tipoRespuesta : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::$$tipoRespuesta</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::$$tipoRespuesta</td>
+</tr>
+</table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ADJUNTO_FIELD"> </a><div class="element clickable constant  constant_ADJUNTO_FIELD" data-toggle="collapse" data-target=".constant_ADJUNTO_FIELD .collapse">
+<h2>Nombre permitido para el campo de ítem adjunto.</h2>
+<pre>ADJUNTO_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ID_ADJUNTO"> </a><div class="element clickable constant  constant_ID_ADJUNTO" data-toggle="collapse" data-target=".constant_ID_ADJUNTO .collapse">
+<h2>Identificador del ítem adjunto.</h2>
+<pre>ID_ADJUNTO : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Ej: "item_principal_ID_ADJUNTO"</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::ID_ADJUNTO</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::ID_ADJUNTO</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_ID_DELIMITER"> </a><div class="element clickable constant  constant_ID_DELIMITER" data-toggle="collapse" data-target=".constant_ID_DELIMITER .collapse">
+<h2>Se utiliza para codificar el identificador de los ítems.</h2>
+<pre>ID_DELIMITER </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Ej.: item__adjunto</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::ID_DELIMITER</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::ID_DELIMITER</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_IS_REQUIRED_FIELD"> </a><div class="element clickable constant  constant_IS_REQUIRED_FIELD" data-toggle="collapse" data-target=".constant_IS_REQUIRED_FIELD .collapse">
+<h2>Nombre permitido para el campo de respuesta obligatoria.</h2>
+<pre>IS_REQUIRED_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_OPCIONES_RESPUESTA_FIELD"> </a><div class="element clickable constant  constant_OPCIONES_RESPUESTA_FIELD" data-toggle="collapse" data-target=".constant_OPCIONES_RESPUESTA_FIELD .collapse">
+<h2>Nombre permitido para el campo de opciones de respuesta.</h2>
+<pre>OPCIONES_RESPUESTA_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PREGUNTA_FIELD"> </a><div class="element clickable constant  constant_PREGUNTA_FIELD" data-toggle="collapse" data-target=".constant_PREGUNTA_FIELD .collapse">
+<h2>En ítems con propiedades adicionales se debe especifiar el campo en
+el que se encuentra la pregunta.</h2>
+<pre>PREGUNTA_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SUB_ITEMS_FIELD"> </a><div class="element clickable constant  constant_SUB_ITEMS_FIELD" data-toggle="collapse" data-target=".constant_SUB_ITEMS_FIELD .collapse">
+<h2>Nombre permitido para el campo de subconjunto de ítems.</h2>
+<pre>SUB_ITEMS_FIELD </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Es posible crear un subconjunto de ítems dependientes de uno de los
+ítems del conjunto principal. Este subconjunto debe mantener la misma
+estructura que mantienen los ítems dentro del conjunto principal.
+En los ítems del subconjutno pueden especificarse las mismas propiedades
+que en cualquier ítem (pregunta, tipo de respuesta, respuestas posibles, etc.)</p>
+
+<p>P. ej.
+conjunto_principal:
+     items:
+         item_padre_subconjunto:
+             items:
+                 subitem_item_padre:
+                     texto: "Texto del sub�tem"
+                     formato: abierta | likert | ...
+                     ...</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\ItemLoader::SUB_ITEMS_FIELD</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_TIPO_ABIERTA"> </a><div class="element clickable constant  constant_TIPO_ABIERTA" data-toggle="collapse" data-target=".constant_TIPO_ABIERTA .collapse">
+<h2>TIPO_ABIERTA</h2>
+<pre>TIPO_ABIERTA </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_ABIERTA</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_ABIERTA</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_TIPO_ABIERTA_AMPLIA"> </a><div class="element clickable constant  constant_TIPO_ABIERTA_AMPLIA" data-toggle="collapse" data-target=".constant_TIPO_ABIERTA_AMPLIA .collapse">
+<h2>TIPO_ABIERTA_AMPLIA</h2>
+<pre>TIPO_ABIERTA_AMPLIA </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_ABIERTA_AMPLIA</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_ABIERTA_AMPLIA</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_TIPO_BINARIA"> </a><div class="element clickable constant  constant_TIPO_BINARIA" data-toggle="collapse" data-target=".constant_TIPO_BINARIA .collapse">
+<h2>TIPO_BINARIA</h2>
+<pre>TIPO_BINARIA </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_BINARIA</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_BINARIA</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_TIPO_LIKERT"> </a><div class="element clickable constant  constant_TIPO_LIKERT" data-toggle="collapse" data-target=".constant_TIPO_LIKERT .collapse">
+<h2>Formatos de respuesta.</h2>
+<pre>TIPO_LIKERT </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_LIKERT</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_LIKERT</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_TIPO_RESPUESTA_FIELD"> </a><div class="element clickable constant  constant_TIPO_RESPUESTA_FIELD" data-toggle="collapse" data-target=".constant_TIPO_RESPUESTA_FIELD .collapse">
+<h2>Nombre permitido para el campo de formato de respuesta en el archivo
+de cuestionario.</h2>
+<pre>TIPO_RESPUESTA_FIELD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TIPO_SELECCION_MULTIPLE"> </a><div class="element clickable constant  constant_TIPO_SELECCION_MULTIPLE" data-toggle="collapse" data-target=".constant_TIPO_SELECCION_MULTIPLE .collapse">
+<h2>TIPO_SELECCION_MULTIPLE</h2>
+<pre>TIPO_SELECCION_MULTIPLE </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_SELECCION_MULTIPLE</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_SELECCION_MULTIPLE</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_TIPO_SELECCION_MULTIPLE_MULTILINEA"> </a><div class="element clickable constant  constant_TIPO_SELECCION_MULTIPLE_MULTILINEA" data-toggle="collapse" data-target=".constant_TIPO_SELECCION_MULTIPLE_MULTILINEA .collapse">
+<h2>TIPO_SELECCION_MULTIPLE_MULTILINEA</h2>
+<pre>TIPO_SELECCION_MULTIPLE_MULTILINEA </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_SELECCION_MULTIPLE_MULTILINEA</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_SELECCION_MULTIPLE_MULTILINEA</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_TIPO_SELECCION_UNICA"> </a><div class="element clickable constant  constant_TIPO_SELECCION_UNICA" data-toggle="collapse" data-target=".constant_TIPO_SELECCION_UNICA .collapse">
+<h2>TIPO_SELECCION_UNICA</h2>
+<pre>TIPO_SELECCION_UNICA </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_SELECCION_UNICA</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_SELECCION_UNICA</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_TIPO_SELECCION_UNICA_DESPLEGABLE"> </a><div class="element clickable constant  constant_TIPO_SELECCION_UNICA_DESPLEGABLE" data-toggle="collapse" data-target=".constant_TIPO_SELECCION_UNICA_DESPLEGABLE .collapse">
+<h2>TIPO_SELECCION_UNICA_DESPLEGABLE</h2>
+<pre>TIPO_SELECCION_UNICA_DESPLEGABLE </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Item::TIPO_SELECCION_UNICA_DESPLEGABLE</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\ItemLoader::TIPO_SELECCION_UNICA_DESPLEGABLE</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-02-05T00:18:29+01:00.<br></footer></div>
+</div>
+</body>
+</html>

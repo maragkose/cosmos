@@ -1,0 +1,496 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \ItemsGroup</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Etiquetas.html"><i class="icon-folder-open"></i> Etiquetas</a></li>
+<li><a href="../packages/Form.html"><i class="icon-folder-open"></i> Form</a></li>
+<li><a href="../packages/Item.html"><i class="icon-folder-open"></i> Item</a></li>
+<li><a href="../packages/ItemsGroup.html"><i class="icon-folder-open"></i> ItemsGroup</a></li>
+<li><a href="../packages/Respuestas.html"><i class="icon-folder-open"></i> Respuestas</a></li>
+<li><a href="../packages/Spyc.html"><i class="icon-folder-open"></i> Spyc</a></li>
+<li><a href="../packages/config.html"><i class="icon-folder-open"></i> config</a></li>
+<li><a href="../packages/utils.html"><i class="icon-folder-open"></i> utils</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">314</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">3</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: El constructor requiere un identificador para el grupo de ítems."><span class="description">El constructor requiere un identificador para el grupo de ítems.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addItem" title="addItem :: Añade un nuevo item al array de ítem."><span class="description">Añade un nuevo item al array de ítem.</span><pre>addItem()</pre></a></li>
+<li class="method public "><a href="#method_addItemsSubGroup" title="addItemsSubGroup :: Añade un nuevo subconjunto."><span class="description">Añade un nuevo subconjunto.</span><pre>addItemsSubGroup()</pre></a></li>
+<li class="method public "><a href="#method_getDescription" title="getDescription :: "><span class="description">getDescription()
+        </span><pre>getDescription()</pre></a></li>
+<li class="method public "><a href="#method_getEtiquetas" title="getEtiquetas :: Recupera las etiquetas contenidas en el objeto Etiquetas almacenado
+en la variable interna."><span class="description">Recupera las etiquetas contenidas en el objeto Etiquetas almacenado
+en la variable interna.</span><pre>getEtiquetas()</pre></a></li>
+<li class="method public "><a href="#method_getFullItemId" title="getFullItemId :: Recupera el identificador completo de un ítem del conjunto."><span class="description">Recupera el identificador completo de un ítem del conjunto.</span><pre>getFullItemId()</pre></a></li>
+<li class="method public "><a href="#method_getId" title="getId :: "><span class="description">getId()
+        </span><pre>getId()</pre></a></li>
+<li class="method public "><a href="#method_getIdsFromTexto" title="getIdsFromTexto :: "><span class="description">getIdsFromTexto()
+        </span><pre>getIdsFromTexto()</pre></a></li>
+<li class="method public "><a href="#method_getImage" title="getImage :: "><span class="description">getImage()
+        </span><pre>getImage()</pre></a></li>
+<li class="method public "><a href="#method_getItems" title="getItems :: "><span class="description">getItems()
+        </span><pre>getItems()</pre></a></li>
+<li class="method public "><a href="#method_getItemsSubGroups" title="getItemsSubGroups :: Devuelve los subconjuntos de ítems."><span class="description">Devuelve los subconjuntos de ítems.</span><pre>getItemsSubGroups()</pre></a></li>
+<li class="method public "><a href="#method_getNewPage" title="getNewPage :: "><span class="description">getNewPage()
+        </span><pre>getNewPage()</pre></a></li>
+<li class="method public "><a href="#method_getTitle" title="getTitle :: "><span class="description">getTitle()
+        </span><pre>getTitle()</pre></a></li>
+<li class="method public "><a href="#method_setDescription" title="setDescription :: "><span class="description">setDescription()
+        </span><pre>setDescription()</pre></a></li>
+<li class="method public "><a href="#method_setEtiquetas" title="setEtiquetas :: Crea un objeto de Etiquetas a partir de la información recibida."><span class="description">Crea un objeto de Etiquetas a partir de la información recibida.</span><pre>setEtiquetas()</pre></a></li>
+<li class="method public "><a href="#method_setId" title="setId :: "><span class="description">setId()
+        </span><pre>setId()</pre></a></li>
+<li class="method public "><a href="#method_setIdsFromTexto" title="setIdsFromTexto :: $idsFromTexto = True | False"><span class="description">$idsFromTexto = True | False</span><pre>setIdsFromTexto()</pre></a></li>
+<li class="method public "><a href="#method_setImage" title="setImage :: Recibe la ruta de la imagen."><span class="description">Recibe la ruta de la imagen.</span><pre>setImage()</pre></a></li>
+<li class="method public "><a href="#method_setNewPage" title="setNewPage :: $newPage = True | False"><span class="description">$newPage = True | False</span><pre>setNewPage()</pre></a></li>
+<li class="method public "><a href="#method_setTitle" title="setTitle :: "><span class="description">setTitle()
+        </span><pre>setTitle()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul><li class="property public "><a href="#property_etiquetas" title="$etiquetas :: Las etiquetas del grupo."><span class="description"></span><pre>$etiquetas</pre></a></li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_description" title="$description :: Descripción del conjunto."><span class="description"></span><pre>$description</pre></a></li>
+<li class="property protected "><a href="#property_id" title="$id :: El identificador del conjunto."><span class="description"></span><pre>$id</pre></a></li>
+<li class="property protected "><a href="#property_idsFromTexto" title="$idsFromTexto :: Los identificadores de ítems del conjunto serán generados a partir de
+su texto."><span class="description"></span><pre>$idsFromTexto</pre></a></li>
+<li class="property protected "><a href="#property_image" title="$image :: Ruta de la imagen que será mostrada en la cabecera del conjunto, bajo
+el título y la descripción."><span class="description"></span><pre>$image</pre></a></li>
+<li class="property protected "><a href="#property_items" title="$items :: Los items que forman el grupo."><span class="description"></span><pre>$items</pre></a></li>
+<li class="property protected "><a href="#property_itemsSubGroups" title="$itemsSubGroups :: Subconjuntos de ItemsGroup que pertenecen a un ItemsGroup padre."><span class="description"></span><pre>$itemsSubGroups</pre></a></li>
+<li class="property protected "><a href="#property_newPage" title="$newPage :: El conjunto será mostrado en una página nueva."><span class="description"></span><pre>$newPage</pre></a></li>
+<li class="property protected "><a href="#property_title" title="$title :: El título del conjunto."><span class="description"></span><pre>$title</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_ID_DELIMITER" title="ID_DELIMITER :: Se utiliza en la vista para codificar el identificador de los items."><span class="description">Se utiliza en la vista para codificar el identificador de los items.</span><pre>ID_DELIMITER</pre></a></li>
+<li class="constant  "><a href="#constant_ID_HTML" title="ID_HTML :: El identificador del elemento html donde se mostrára el conjunto de ítems."><span class="description">El identificador del elemento html donde se mostrára el conjunto de ítems.</span><pre>ID_HTML</pre></a></li>
+<li class="constant  "><a href="#constant_ITEM_ID_INICIO" title="ITEM_ID_INICIO :: Identificador por el que se comienzan a numerar los ítems"><span class="description">Identificador por el que se comienzan a numerar los ítems</span><pre>ITEM_ID_INICIO</pre></a></li>
+<li class="constant  "><a href="#constant_SUBGROUP_ID_INICIO" title="SUBGROUP_ID_INICIO :: Identificador por el que se comienzan a numerar los subconjuntos."><span class="description">Identificador por el que se comienzan a numerar los subconjuntos.</span><pre>SUBGROUP_ID_INICIO</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ItemsGroup"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ItemsGroup.html">ItemsGroup</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Clase que crea objetos formados por conjuntos de ítems.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>todo</th>
+<td>Por corregir. Algunos métodos heredados no siguen la estructura de inputs
+de las clases padre, lo cual provoca errores de tipo STRICT.</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/ItemsGroup.html">ItemsGroup</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="mailto:juanharo@gmail.com">Juan Haro</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://jharo.net/dokuwiki/testmaker">http://jharo.net/dokuwiki/testmaker</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright 2012 Juan Haro</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>El constructor requiere un identificador para el grupo de ítems.</h2>
+<pre>__construct(string $id, array | integer | <a href="../classes/Etiquetas.html">\Etiquetas</a> $etiquetas, string $title) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Opcionalmente puede recibir un objeto de etiquetas y el título
+que será asignado al conjunto.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code><p>id</p></div>
+<div class="subelement argument">
+<h4>$etiquetas</h4>
+<code>array</code><code>integer</code><code><a href="../classes/Etiquetas.html">\Etiquetas</a></code>
+</div>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_addItem"></a><div class="element clickable method public method_addItem" data-toggle="collapse" data-target=".method_addItem .collapse">
+<h2>Añade un nuevo item al array de ítem.</h2>
+<pre>addItem(<a href="../classes/Item.html">\Item</a> | string $item, \itemId $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>La variable $item puede ser un objeto Item o bien una cadena de texto.
+Si la variable $item es una cadena de texto, crea un nuevo objeto ítem
+al que le asigna ese texto. Si no recibe identificador, se le asignará un
+identificador númerico (número de ítems + 1).</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$item</h4>
+<code><a href="../classes/Item.html">\Item</a></code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>\itemId</code>
+</div>
+</div></div>
+</div>
+<a id="method_addItemsSubGroup"></a><div class="element clickable method public method_addItemsSubGroup" data-toggle="collapse" data-target=".method_addItemsSubGroup .collapse">
+<h2>Añade un nuevo subconjunto.</h2>
+<pre>addItemsSubGroup(\ItemsGroup $itemsSubGroup) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$itemsSubGroup</h4>
+<code><a href="../classes/ItemsGroup.html">\ItemsGroup</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_getDescription"></a><div class="element clickable method public method_getDescription" data-toggle="collapse" data-target=".method_getDescription .collapse">
+<h2>getDescription()
+        </h2>
+<pre>getDescription() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getEtiquetas"></a><div class="element clickable method public method_getEtiquetas" data-toggle="collapse" data-target=".method_getEtiquetas .collapse">
+<h2>Recupera las etiquetas contenidas en el objeto Etiquetas almacenado
+en la variable interna.</h2>
+<pre>getEtiquetas() : \type</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\type</code></div>
+</div></div>
+</div>
+<a id="method_getFullItemId"></a><div class="element clickable method public method_getFullItemId" data-toggle="collapse" data-target=".method_getFullItemId .collapse">
+<h2>Recupera el identificador completo de un ítem del conjunto.</h2>
+<pre>getFullItemId(\Item $itemToFind) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>El identificador completo se utiliza en el atributo 'name' de los
+elementos del formulario html.
+La búsqueda se realiza comparando el hash del ítem pasado con el hash
+de cada uno de los ítems del conjunto.
+Por ahora sólo acepta dos niveles de profundidad: Group_SubGroup_Item</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$itemToFind</h4></div>
+</div></div>
+</div>
+<a id="method_getId"></a><div class="element clickable method public method_getId" data-toggle="collapse" data-target=".method_getId .collapse">
+<h2>getId()
+        </h2>
+<pre>getId() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getIdsFromTexto"></a><div class="element clickable method public method_getIdsFromTexto" data-toggle="collapse" data-target=".method_getIdsFromTexto .collapse">
+<h2>getIdsFromTexto()
+        </h2>
+<pre>getIdsFromTexto() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getImage"></a><div class="element clickable method public method_getImage" data-toggle="collapse" data-target=".method_getImage .collapse">
+<h2>getImage()
+        </h2>
+<pre>getImage() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getItems"></a><div class="element clickable method public method_getItems" data-toggle="collapse" data-target=".method_getItems .collapse">
+<h2>getItems()
+        </h2>
+<pre>getItems() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getItemsSubGroups"></a><div class="element clickable method public method_getItemsSubGroups" data-toggle="collapse" data-target=".method_getItemsSubGroups .collapse">
+<h2>Devuelve los subconjuntos de ítems.</h2>
+<pre>getItemsSubGroups() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getNewPage"></a><div class="element clickable method public method_getNewPage" data-toggle="collapse" data-target=".method_getNewPage .collapse">
+<h2>getNewPage()
+        </h2>
+<pre>getNewPage() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getTitle"></a><div class="element clickable method public method_getTitle" data-toggle="collapse" data-target=".method_getTitle .collapse">
+<h2>getTitle()
+        </h2>
+<pre>getTitle() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setDescription"></a><div class="element clickable method public method_setDescription" data-toggle="collapse" data-target=".method_setDescription .collapse">
+<h2>setDescription()
+        </h2>
+<pre>setDescription($description) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$description</h4></div>
+</div></div>
+</div>
+<a id="method_setEtiquetas"></a><div class="element clickable method public method_setEtiquetas" data-toggle="collapse" data-target=".method_setEtiquetas .collapse">
+<h2>Crea un objeto de Etiquetas a partir de la información recibida.</h2>
+<pre>setEtiquetas(\type $etiquetas) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>También permite la asignación de un objeto Etiquetas.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$etiquetas</h4>
+<code>\type</code>
+</div>
+</div></div>
+</div>
+<a id="method_setId"></a><div class="element clickable method public method_setId" data-toggle="collapse" data-target=".method_setId .collapse">
+<h2>setId()
+        </h2>
+<pre>setId($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_setIdsFromTexto"></a><div class="element clickable method public method_setIdsFromTexto" data-toggle="collapse" data-target=".method_setIdsFromTexto .collapse">
+<h2>$idsFromTexto = True | False</h2>
+<pre>setIdsFromTexto(boolean $idsFromTexto) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idsFromTexto</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<a id="method_setImage"></a><div class="element clickable method public method_setImage" data-toggle="collapse" data-target=".method_setImage .collapse">
+<h2>Recibe la ruta de la imagen.</h2>
+<pre>setImage(string $image) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$image</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_setNewPage"></a><div class="element clickable method public method_setNewPage" data-toggle="collapse" data-target=".method_setNewPage .collapse">
+<h2>$newPage = True | False</h2>
+<pre>setNewPage(boolean $newPage) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$newPage</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<a id="method_setTitle"></a><div class="element clickable method public method_setTitle" data-toggle="collapse" data-target=".method_setTitle .collapse">
+<h2>setTitle()
+        </h2>
+<pre>setTitle($title) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$title</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_etiquetas"> </a><div class="element clickable property public property_etiquetas" data-toggle="collapse" data-target=".property_etiquetas .collapse">
+<h2></h2>
+<pre>$etiquetas : <a href="../classes/Etiquetas.html">\Etiquetas</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Es un objeto de la clase Etiquetas.
+Se inicializa a NULL ya que puede existir un grupo de ítems que no
+contenga etiquetas (p.ej, si se compone de ítems con opción de respuesta
+múltiple).</p></div></div></div>
+</div>
+<a id="property_description"> </a><div class="element clickable property protected property_description" data-toggle="collapse" data-target=".property_description .collapse">
+<h2></h2>
+<pre>$description : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Se muestra bajo el título.</p></div></div></div>
+</div>
+<a id="property_id"> </a><div class="element clickable property protected property_id" data-toggle="collapse" data-target=".property_id .collapse">
+<h2></h2>
+<pre>$id : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Se utiliza para codificar los ítems.
+Ej. idGrupo__idPregunta</p></div></div></div>
+</div>
+<a id="property_idsFromTexto"> </a><div class="element clickable property protected property_idsFromTexto" data-toggle="collapse" data-target=".property_idsFromTexto .collapse">
+<h2></h2>
+<pre>$idsFromTexto : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_image"> </a><div class="element clickable property protected property_image" data-toggle="collapse" data-target=".property_image .collapse">
+<h2></h2>
+<pre>$image : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_items"> </a><div class="element clickable property protected property_items" data-toggle="collapse" data-target=".property_items .collapse">
+<h2></h2>
+<pre>$items : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_itemsSubGroups"> </a><div class="element clickable property protected property_itemsSubGroups" data-toggle="collapse" data-target=".property_itemsSubGroups .collapse">
+<h2></h2>
+<pre>$itemsSubGroups </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_newPage"> </a><div class="element clickable property protected property_newPage" data-toggle="collapse" data-target=".property_newPage .collapse">
+<h2></h2>
+<pre>$newPage : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_title"> </a><div class="element clickable property protected property_title" data-toggle="collapse" data-target=".property_title .collapse">
+<h2></h2>
+<pre>$title : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Se muestra en el encabezado de cada conjunto.</p></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ID_DELIMITER"> </a><div class="element clickable constant  constant_ID_DELIMITER" data-toggle="collapse" data-target=".constant_ID_DELIMITER .collapse">
+<h2>Se utiliza en la vista para codificar el identificador de los items.</h2>
+<pre>ID_DELIMITER </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Ej.: grupo__item1
+Ej.: grupo__subgrupo__item1</p></div></div></div>
+</div>
+<a id="constant_ID_HTML"> </a><div class="element clickable constant  constant_ID_HTML" data-toggle="collapse" data-target=".constant_ID_HTML .collapse">
+<h2>El identificador del elemento html donde se mostrára el conjunto de ítems.</h2>
+<pre>ID_HTML </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Se utiliza conjuntamente con un valor numérico para asignar el orden de los
+conjuntos de ítems mostrados en la plantilla html.</p></div></div></div>
+</div>
+<a id="constant_ITEM_ID_INICIO"> </a><div class="element clickable constant  constant_ITEM_ID_INICIO" data-toggle="collapse" data-target=".constant_ITEM_ID_INICIO .collapse">
+<h2>Identificador por el que se comienzan a numerar los ítems</h2>
+<pre>ITEM_ID_INICIO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_SUBGROUP_ID_INICIO"> </a><div class="element clickable constant  constant_SUBGROUP_ID_INICIO" data-toggle="collapse" data-target=".constant_SUBGROUP_ID_INICIO .collapse">
+<h2>Identificador por el que se comienzan a numerar los subconjuntos.</h2>
+<pre>SUBGROUP_ID_INICIO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-02-05T00:18:25+01:00.<br></footer></div>
+</div>
+</body>
+</html>

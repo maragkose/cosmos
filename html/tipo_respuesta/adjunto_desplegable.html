@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <td>
+            <?php echo $item->getItemAdjunto()->getTextoPregunta()?>
+        </td>
+        <td>
+            <select name="<?php echo $itemsGroup->getFullItemId($item->getItemAdjunto())?>[]"
+                    <?php if($item->getItemAdjunto()->isRequired()){?> required="required"<?php }?>>
+                <option value=""><?php echo $form->getSelectTxt()?></option>
+                <?php foreach($item->getItemAdjunto()->getOpcionesRespuesta() as $respuestaId=>$respuesta){?>
+                <option value="<?php echo $respuestaId?>"><?php echo $respuesta?></option>
+                <?php }?>
+            </select>
+        </td>
+    </tr>
+   
+</table>
